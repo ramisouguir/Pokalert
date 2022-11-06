@@ -1,0 +1,1289 @@
+Symbol range map extraction starting
+Processing 11 files
+startProcessing "com\outflows\pokalert\alert\AntiAfk.java" md5: e44f085a24a442afb09bf373d0c55a0b
+@|com\outflows\pokalert\alert\AntiAfk.java|8|35|com.outflows.pokalert.alert|package|com.outflows.pokalert.alert|(file)
+Class Start: com.outflows.pokalert.alert.AntiAfk
+   @|com\outflows\pokalert\alert\AntiAfk.java|553|560|AntiAfk|class|com.outflows.pokalert.alert.AntiAfk
+   @|com\outflows\pokalert\alert\AntiAfk.java|579|589|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\AntiAfk.java|579|589|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\AntiAfk.java|590|597|antiafk|field|com.outflows.pokalert.alert.AntiAfk|antiafk|
+   @|com\outflows\pokalert\alert\AntiAfk.java|600|608|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\alert\AntiAfk.java|609|616|antiafk|field|com.outflows.pokalert.pokalert|antiafk
+   @|com\outflows\pokalert\alert\AntiAfk.java|642|652|inProgress|field|com.outflows.pokalert.alert.AntiAfk|inProgress|
+   @|com\outflows\pokalert\alert\AntiAfk.java|682|687|count|field|com.outflows.pokalert.alert.AntiAfk|count|
+   Method Start: afkAvoid(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com\outflows\pokalert\alert\AntiAfk.java|758|763|event|param|com.outflows.pokalert.alert.AntiAfk|afkAvoid|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|com\outflows\pokalert\alert\AntiAfk.java|695|709|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\AntiAfk.java|723|731|afkAvoid|method|com.outflows.pokalert.alert.AntiAfk|afkAvoid|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com\outflows\pokalert\alert\AntiAfk.java|732|757|TickEvent.ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
+      @|com\outflows\pokalert\alert\AntiAfk.java|773|783|inProgress|field|com.outflows.pokalert.alert.AntiAfk|inProgress
+      @|com\outflows\pokalert\alert\AntiAfk.java|792|797|count|field|com.outflows.pokalert.alert.AntiAfk|count
+      @|com\outflows\pokalert\alert\AntiAfk.java|807|812|count|field|com.outflows.pokalert.alert.AntiAfk|count
+      @|com\outflows\pokalert\alert\AntiAfk.java|829|838|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\AntiAfk.java|839|851|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\AntiAfk.java|854|860|player|field|net.minecraft.client.Minecraft|player
+      @|com\outflows\pokalert\alert\AntiAfk.java|861|865|jump|method|net.minecraft.entity.EntityLivingBase|jump|()V
+      @|com\outflows\pokalert\alert\AntiAfk.java|873|882|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\AntiAfk.java|883|895|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\AntiAfk.java|898|904|player|field|net.minecraft.client.Minecraft|player
+      @|com\outflows\pokalert\alert\AntiAfk.java|905|913|swingArm|method|net.minecraft.entity.EntityLivingBase|swingArm|(Lnet/minecraft/util/EnumHand;)V
+      @|com\outflows\pokalert\alert\AntiAfk.java|914|922|EnumHand|class|net.minecraft.util.EnumHand
+      @|com\outflows\pokalert\alert\AntiAfk.java|923|932|MAIN_HAND|field|net.minecraft.util.EnumHand|MAIN_HAND
+      @|com\outflows\pokalert\alert\AntiAfk.java|939|944|count|field|com.outflows.pokalert.alert.AntiAfk|count
+   Method End: afkAvoid(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+   Method Start: updateKeys(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com\outflows\pokalert\alert\AntiAfk.java|1034|1039|event|param|com.outflows.pokalert.alert.AntiAfk|updateKeys|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
+      @|com\outflows\pokalert\alert\AntiAfk.java|970|984|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\AntiAfk.java|998|1008|updateKeys|method|com.outflows.pokalert.alert.AntiAfk|updateKeys|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com\outflows\pokalert\alert\AntiAfk.java|1009|1033|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent
+      @|com\outflows\pokalert\alert\AntiAfk.java|1049|1056|antiafk|field|com.outflows.pokalert.alert.AntiAfk|antiafk
+      @|com\outflows\pokalert\alert\AntiAfk.java|1057|1066|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com\outflows\pokalert\alert\AntiAfk.java|1077|1082|count|field|com.outflows.pokalert.alert.AntiAfk|count
+      @|com\outflows\pokalert\alert\AntiAfk.java|1094|1104|inProgress|field|com.outflows.pokalert.alert.AntiAfk|inProgress
+      @|com\outflows\pokalert\alert\AntiAfk.java|1115|1125|inProgress|field|com.outflows.pokalert.alert.AntiAfk|inProgress
+      @|com\outflows\pokalert\alert\AntiAfk.java|1139|1155|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\alert\AntiAfk.java|1156|1167|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\AntiAfk.java|1219|1229|inProgress|field|com.outflows.pokalert.alert.AntiAfk|inProgress
+      @|com\outflows\pokalert\alert\AntiAfk.java|1242|1258|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\alert\AntiAfk.java|1259|1270|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+   Method End: updateKeys(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+Class End  : com.outflows.pokalert.alert.AntiAfk
+endProcessing "com\outflows\pokalert\alert\AntiAfk.java"
+
+startProcessing "com\outflows\pokalert\alert\PokemonDetection.java" md5: 6bbecf970ee1215868a0b17f40b281b5
+Cache Hit!
+@|com\outflows\pokalert\alert\PokemonDetection.java|8|35|com.outflows.pokalert.alert|package|com.outflows.pokalert.alert|(file)
+Class Start: com.outflows.pokalert.alert.PokemonDetection
+   @|com\outflows\pokalert\alert\PokemonDetection.java|2870|2886|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+   @|com\outflows\pokalert\alert\PokemonDetection.java|2898|2906|Runnable|class|java.lang.Runnable
+   @|com\outflows\pokalert\alert\PokemonDetection.java|2926|2943|teleportCancelled|field|com.outflows.pokalert.alert.PokemonDetection|teleportCancelled|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|2969|2983|pokemonSpotted|field|com.outflows.pokalert.alert.PokemonDetection|pokemonSpotted|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3002|3008|Thread|class|java.lang.Thread
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3002|3008|Thread|class|java.lang.Thread
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3009|3010|t|field|com.outflows.pokalert.alert.PokemonDetection|t|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3037|3043|String|class|java.lang.String
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3027|3036|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3027|3036|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3037|3043|String|class|java.lang.String
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3045|3056|legendaries|field|com.outflows.pokalert.alert.PokemonDetection|legendaries|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3059|3070|EnumSpecies|class|com.pixelmonmod.pixelmon.enums.EnumSpecies
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3071|3082|legendaries|field|com.pixelmonmod.pixelmon.enums.EnumSpecies|legendaries
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3109|3115|String|class|java.lang.String
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3099|3108|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3099|3108|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3109|3115|String|class|java.lang.String
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3117|3128|ultrabeasts|field|com.outflows.pokalert.alert.PokemonDetection|ultrabeasts|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3131|3142|EnumSpecies|class|com.pixelmonmod.pixelmon.enums.EnumSpecies
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3143|3154|ultrabeasts|field|com.pixelmonmod.pixelmon.enums.EnumSpecies|ultrabeasts
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3185|3191|String|class|java.lang.String
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3171|3184|ImmutableList|class|com.google.common.collect.ImmutableList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3171|3184|ImmutableList|class|com.google.common.collect.ImmutableList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3185|3191|String|class|java.lang.String
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3193|3201|allpokes|field|com.outflows.pokalert.alert.PokemonDetection|allpokes|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3204|3215|EnumSpecies|class|com.pixelmonmod.pixelmon.enums.EnumSpecies
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3216|3227|getNameList|method|com.pixelmonmod.pixelmon.enums.EnumSpecies|getNameList|()Lcom/google/common/collect/ImmutableList;
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3257|3271|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3247|3256|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3247|3256|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3257|3271|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3273|3280|targets|field|com.outflows.pokalert.alert.PokemonDetection|targets|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3287|3296|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3297|3311|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3324|3340|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3324|3340|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3341|3349|location|field|com.outflows.pokalert.alert.PokemonDetection|location|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3356|3372|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3409|3419|SoundEvent|class|net.minecraft.util.SoundEvent
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3409|3419|SoundEvent|class|net.minecraft.util.SoundEvent
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3420|3426|sevent|field|com.outflows.pokalert.alert.PokemonDetection|sevent|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3433|3443|SoundEvent|class|net.minecraft.util.SoundEvent
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3444|3452|location|field|com.outflows.pokalert.alert.PokemonDetection|location
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3470|3476|vowels|field|com.outflows.pokalert.alert.PokemonDetection|vowels|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3547|3557|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3547|3557|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3558|3565|glowing|field|com.outflows.pokalert.alert.PokemonDetection|glowing|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3568|3576|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3577|3581|glow|field|com.outflows.pokalert.pokalert|glow
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3607|3624|glowingInProgress|field|com.outflows.pokalert.alert.PokemonDetection|glowingInProgress|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3649|3659|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3649|3659|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3660|3663|swo|field|com.outflows.pokalert.alert.PokemonDetection|swo|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3666|3674|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3675|3696|showPokemonWithOwners|field|com.outflows.pokalert.pokalert|showPokemonWithOwners
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3722|3735|swoInProgress|field|com.outflows.pokalert.alert.PokemonDetection|swoInProgress|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3769|3782|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3807|3817|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3807|3817|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3818|3821|box|field|com.outflows.pokalert.alert.PokemonDetection|box|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3824|3832|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3833|3836|box|field|com.outflows.pokalert.pokalert|box
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3863|3869|String|class|java.lang.String
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3853|3862|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3853|3862|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3863|3869|String|class|java.lang.String
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3871|3879|badforms|field|com.outflows.pokalert.alert.PokemonDetection|badforms|
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3886|3895|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3898|3904|Arrays|class|java.util.Arrays
+   @|com\outflows\pokalert\alert\PokemonDetection.java|3905|3911|asList|method|java.util.Arrays|asList|([Ljava/lang/Object;)Ljava/util/List;
+   Method Start: detectPokemon(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4198|4203|event|param|com.outflows.pokalert.alert.PokemonDetection|detectPokemon|(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V|event|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4135|4149|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4163|4176|detectPokemon|method|com.outflows.pokalert.alert.PokemonDetection|detectPokemon|(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4177|4197|EntityJoinWorldEvent|class|net.minecraftforge.event.entity.EntityJoinWorldEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4210|4222|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4232|4241|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4242|4254|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4257|4263|player|field|net.minecraft.client.Minecraft|player
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4267|4272|World|class|net.minecraft.world.World
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4281|4290|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4291|4303|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4306|4311|world|field|net.minecraft.client.Minecraft|world
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4341|4346|event|param|com.outflows.pokalert.alert.PokemonDetection|detectPokemon|(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V|event|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4347|4356|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4370|4384|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4396|4410|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4419|4433|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4434|4439|event|param|com.outflows.pokalert.alert.PokemonDetection|detectPokemon|(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V|event|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4440|4449|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4461|4474|swoInProgress|field|com.outflows.pokalert.alert.PokemonDetection|swoInProgress
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4483|4491|hasOwner|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|hasOwner|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4517|4529|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4532|4540|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4543|4551|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4569|4580|legendaries|field|com.outflows.pokalert.alert.PokemonDetection|legendaries
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4581|4589|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4595|4609|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4616|4627|ultrabeasts|field|com.outflows.pokalert.alert.PokemonDetection|ultrabeasts
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4628|4636|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4642|4656|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4669|4682|isBossPokemon|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|isBossPokemon|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4693|4704|getBossMode|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getBossMode|()Lcom/pixelmonmod/pixelmon/enums/EnumBossMode;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4707|4715|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4718|4726|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4747|4761|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4764|4770|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4793|4805|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4808|4816|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4819|4825|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4831|4843|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4846|4854|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4857|4864|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4889|4897|badforms|field|com.outflows.pokalert.alert.PokemonDetection|badforms
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4898|4906|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4912|4926|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|4985|4999|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5008|5015|targets|field|com.outflows.pokalert.alert.PokemonDetection|targets
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5040|5046|equals|method|net.minecraft.entity.Entity|equals|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5148|5159|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5189|5203|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5219|5226|targets|field|com.outflows.pokalert.alert.PokemonDetection|targets
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5227|5230|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5256|5265|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5266|5278|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5281|5295|inGameHasFocus|field|net.minecraft.client.Minecraft|inGameHasFocus
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5298|5307|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5308|5320|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5323|5335|isFullScreen|method|net.minecraft.client.Minecraft|isFullScreen|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5365|5376|getBossMode|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getBossMode|()Lcom/pixelmonmod/pixelmon/enums/EnumBossMode;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5379|5387|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5390|5396|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5423|5439|java.awt.Toolkit|class|java.awt.Toolkit
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5440|5457|getDefaultToolkit|method|java.awt.Toolkit|getDefaultToolkit|()Ljava/awt/Toolkit;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5460|5464|beep|method|java.awt.Toolkit|beep|()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5479|5492|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5502|5514|displayPopUp|method|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5573|5584|getBossMode|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getBossMode|()Lcom/pixelmonmod/pixelmon/enums/EnumBossMode;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5587|5595|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5598|5604|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5636|5652|java.awt.Toolkit|class|java.awt.Toolkit
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5653|5670|getDefaultToolkit|method|java.awt.Toolkit|getDefaultToolkit|()Ljava/awt/Toolkit;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5673|5677|beep|method|java.awt.Toolkit|beep|()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5692|5705|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5715|5727|displayPopUp|method|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5791|5802|getBossMode|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getBossMode|()Lcom/pixelmonmod/pixelmon/enums/EnumBossMode;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5805|5813|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5816|5822|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5853|5869|java.awt.Toolkit|class|java.awt.Toolkit
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5870|5887|getDefaultToolkit|method|java.awt.Toolkit|getDefaultToolkit|()Ljava/awt/Toolkit;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5890|5894|beep|method|java.awt.Toolkit|beep|()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5909|5922|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|5932|5944|displayPopUp|method|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6003|6014|legendaries|field|com.outflows.pokalert.alert.PokemonDetection|legendaries
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6015|6023|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6029|6043|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6065|6081|java.awt.Toolkit|class|java.awt.Toolkit
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6082|6099|getDefaultToolkit|method|java.awt.Toolkit|getDefaultToolkit|()Ljava/awt/Toolkit;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6102|6106|beep|method|java.awt.Toolkit|beep|()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6121|6134|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6144|6156|displayPopUp|method|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6215|6227|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6230|6238|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6241|6249|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6282|6298|java.awt.Toolkit|class|java.awt.Toolkit
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6299|6316|getDefaultToolkit|method|java.awt.Toolkit|getDefaultToolkit|()Ljava/awt/Toolkit;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6319|6323|beep|method|java.awt.Toolkit|beep|()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6338|6351|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6361|6373|displayPopUp|method|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6423|6434|ultrabeasts|field|com.outflows.pokalert.alert.PokemonDetection|ultrabeasts
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6435|6443|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6449|6463|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6485|6501|java.awt.Toolkit|class|java.awt.Toolkit
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6502|6519|getDefaultToolkit|method|java.awt.Toolkit|getDefaultToolkit|()Ljava/awt/Toolkit;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6522|6526|beep|method|java.awt.Toolkit|beep|()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6541|6554|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6564|6576|displayPopUp|method|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6637|6651|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6654|6660|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6688|6704|java.awt.Toolkit|class|java.awt.Toolkit
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6705|6722|getDefaultToolkit|method|java.awt.Toolkit|getDefaultToolkit|()Ljava/awt/Toolkit;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6725|6729|beep|method|java.awt.Toolkit|beep|()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6744|6757|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6767|6779|displayPopUp|method|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6840|6852|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6855|6863|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6866|6872|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6878|6890|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6893|6901|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6904|6911|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6951|6967|java.awt.Toolkit|class|java.awt.Toolkit
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6968|6985|getDefaultToolkit|method|java.awt.Toolkit|getDefaultToolkit|()Ljava/awt/Toolkit;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|6988|6992|beep|method|java.awt.Toolkit|beep|()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7007|7020|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7030|7042|displayPopUp|method|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7549|7563|pokemonSpotted|field|com.outflows.pokalert.alert.PokemonDetection|pokemonSpotted
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7579|7596|glowingInProgress|field|com.outflows.pokalert.alert.PokemonDetection|glowingInProgress
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7610|7620|setGlowing|method|net.minecraft.entity.Entity|setGlowing|(Z)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7651|7661|setGlowing|method|net.minecraft.entity.Entity|setGlowing|(Z)V
+   Method End: detectPokemon(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V
+   Method Start: updateTargets(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7808|7813|event|param|com.outflows.pokalert.alert.PokemonDetection|updateTargets|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7740|7754|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7768|7781|updateTargets|method|com.outflows.pokalert.alert.PokemonDetection|updateTargets|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7782|7807|TickEvent.ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7820|7825|World|class|net.minecraft.world.World
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7834|7843|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7844|7856|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7859|7864|world|field|net.minecraft.client.Minecraft|world
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7890|7898|Iterator|class|java.util.Iterator
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7899|7913|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7922|7929|targets|field|com.outflows.pokalert.alert.PokemonDetection|targets
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7930|7938|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7957|7964|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|7979|7993|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8008|8012|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8032|8045|isEntityAlive|method|net.minecraft.entity.Entity|isEntityAlive|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8062|8073|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8104|8118|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8138|8144|remove|method|java.util.Iterator|remove|()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8168|8175|targets|field|com.outflows.pokalert.alert.PokemonDetection|targets
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8176|8180|size|method|java.util.Collection|size|()I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8297|8311|pokemonSpotted|field|com.outflows.pokalert.alert.PokemonDetection|pokemonSpotted
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8337|8345|Teleport|class|com.outflows.pokalert.alert.Teleport
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8346|8359|getInProgress|method|com.outflows.pokalert.alert.Teleport|getInProgress|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8374|8382|Teleport|class|com.outflows.pokalert.alert.Teleport
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8383|8395|cancelTPTask|method|com.outflows.pokalert.alert.Teleport|cancelTPTask|()V
+   Method End: updateTargets(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+   Method Start: printCurrentSounds()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8427|8445|printCurrentSounds|method|com.outflows.pokalert.alert.PokemonDetection|printCurrentSounds|()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8455|8475|NoSuchFieldException|class|java.lang.NoSuchFieldException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8477|8499|IllegalAccessException|class|java.lang.IllegalAccessException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8501|8525|IllegalArgumentException|class|java.lang.IllegalArgumentException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8527|8552|InvocationTargetException|class|java.lang.reflect.InvocationTargetException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8554|8575|NoSuchMethodException|class|java.lang.NoSuchMethodException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8577|8594|SecurityException|class|java.lang.SecurityException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8600|8612|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8622|8631|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8632|8644|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8647|8653|player|field|net.minecraft.client.Minecraft|player
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8657|8666|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8672|8681|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8682|8694|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8700|8712|SoundHandler|class|net.minecraft.client.audio.SoundHandler
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8721|8736|getSoundHandler|method|net.minecraft.client.Minecraft|getSoundHandler|()Lnet/minecraft/client/audio/SoundHandler;
+   Method End: printCurrentSounds()V
+   Method Start: printSound(Lnet/minecraftforge/client/event/sound/PlaySoundEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8929|8934|event|param|com.outflows.pokalert.alert.PokemonDetection|printSound|(Lnet/minecraftforge/client/event/sound/PlaySoundEvent;)V|event|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8875|8889|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8903|8913|printSound|method|com.outflows.pokalert.alert.PokemonDetection|printSound|(Lnet/minecraftforge/client/event/sound/PlaySoundEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8914|8928|PlaySoundEvent|class|net.minecraftforge.client.event.sound.PlaySoundEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8941|8946|World|class|net.minecraft.world.World
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8955|8964|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8965|8977|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|8980|8985|world|field|net.minecraft.client.Minecraft|world
+   Method End: printSound(Lnet/minecraftforge/client/event/sound/PlaySoundEvent;)V
+   Method Start: getTargets()Ljava/util/ArrayList;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9066|9075|ArrayList|class|java.util.ArrayList
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9076|9090|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9092|9102|getTargets|method|com.outflows.pokalert.alert.PokemonDetection|getTargets|()Ljava/util/ArrayList;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9117|9124|targets|field|com.outflows.pokalert.alert.PokemonDetection|targets
+   Method End: getTargets()Ljava/util/ArrayList;
+   Method Start: grabId(Lnet/minecraftforge/event/entity/player/AttackEntityEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9210|9215|event|param|com.outflows.pokalert.alert.PokemonDetection|grabId|(Lnet/minecraftforge/event/entity/player/AttackEntityEvent;)V|event|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9133|9141|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9142|9146|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9147|9153|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9157|9171|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9185|9191|grabId|method|com.outflows.pokalert.alert.PokemonDetection|grabId|(Lnet/minecraftforge/event/entity/player/AttackEntityEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9192|9209|AttackEntityEvent|class|net.minecraftforge.event.entity.player.AttackEntityEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9224|9244|NoSuchFieldException|class|java.lang.NoSuchFieldException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9246|9268|IllegalAccessException|class|java.lang.IllegalAccessException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9270|9294|IllegalArgumentException|class|java.lang.IllegalArgumentException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9296|9321|InvocationTargetException|class|java.lang.reflect.InvocationTargetException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9323|9344|NoSuchMethodException|class|java.lang.NoSuchMethodException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9346|9363|SecurityException|class|java.lang.SecurityException
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9373|9378|event|param|com.outflows.pokalert.alert.PokemonDetection|grabId|(Lnet/minecraftforge/event/entity/player/AttackEntityEvent;)V|event|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9379|9388|getTarget|method|net.minecraftforge.event.entity.player.AttackEntityEvent|getTarget|()Lnet/minecraft/entity/Entity;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9402|9416|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9427|9441|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9450|9464|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9465|9470|event|param|com.outflows.pokalert.alert.PokemonDetection|grabId|(Lnet/minecraftforge/event/entity/player/AttackEntityEvent;)V|event|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9471|9480|getTarget|method|net.minecraftforge.event.entity.player.AttackEntityEvent|getTarget|()Lnet/minecraft/entity/Entity;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9488|9494|System|class|java.lang.System
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9495|9498|out|field|java.lang.System|out
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9499|9506|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9512|9524|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9527|9535|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9544|9550|System|class|java.lang.System
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9551|9554|out|field|java.lang.System|out
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9555|9562|println|method|java.io.PrintStream|println|(I)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9568|9580|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9583|9591|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9594|9601|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9622|9628|System|class|java.lang.System
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9629|9632|out|field|java.lang.System|out
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9633|9640|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9647|9659|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9662|9670|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9673|9679|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9685|9697|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9700|9708|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9711|9718|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+   Method End: grabId(Lnet/minecraftforge/event/entity/player/AttackEntityEvent;)V
+   Method Start: getDefIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9786|9790|poke|param|com.outflows.pokalert.alert.PokemonDetection|getDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9762|9770|getDefIV|method|com.outflows.pokalert.alert.PokemonDetection|getDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9771|9785|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9797|9803|String|class|java.lang.String
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9810|9814|poke|param|com.outflows.pokalert.alert.PokemonDetection|getDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9815|9827|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9830|9838|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9860|9867|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9895|9901|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9931|9938|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9939|9947|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|9952|9961|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10001|10008|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10009|10017|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10022|10031|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+   Method End: getDefIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+   Method Start: getSpDefIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10093|10097|poke|param|com.outflows.pokalert.alert.PokemonDetection|getSpDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10067|10077|getSpDefIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10078|10092|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10104|10110|String|class|java.lang.String
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10117|10121|poke|param|com.outflows.pokalert.alert.PokemonDetection|getSpDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10122|10134|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10137|10145|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10167|10174|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10199|10205|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10235|10242|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10243|10251|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10256|10265|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10305|10312|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10313|10321|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10326|10335|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+   Method End: getSpDefIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+   Method Start: getSpeedIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10397|10401|poke|param|com.outflows.pokalert.alert.PokemonDetection|getSpeedIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10371|10381|getSpeedIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpeedIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10382|10396|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10408|10414|String|class|java.lang.String
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10421|10425|poke|param|com.outflows.pokalert.alert.PokemonDetection|getSpeedIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10426|10438|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10441|10449|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10471|10478|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10503|10509|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10539|10546|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10547|10555|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10560|10569|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10609|10616|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10617|10625|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10630|10639|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+   Method End: getSpeedIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+   Method Start: getAttackIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10702|10706|poke|param|com.outflows.pokalert.alert.PokemonDetection|getAttackIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10675|10686|getAttackIV|method|com.outflows.pokalert.alert.PokemonDetection|getAttackIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10687|10701|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10713|10719|String|class|java.lang.String
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10726|10730|poke|param|com.outflows.pokalert.alert.PokemonDetection|getAttackIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10731|10743|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10746|10754|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10776|10783|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10809|10815|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10845|10852|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10853|10861|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10866|10875|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10915|10922|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10923|10931|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10936|10945|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+   Method End: getAttackIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+   Method Start: getHPIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11004|11008|poke|param|com.outflows.pokalert.alert.PokemonDetection|getHPIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10981|10988|getHPIV|method|com.outflows.pokalert.alert.PokemonDetection|getHPIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|10989|11003|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11015|11021|String|class|java.lang.String
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11028|11032|poke|param|com.outflows.pokalert.alert.PokemonDetection|getHPIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11033|11045|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11048|11056|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11078|11085|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11107|11113|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11143|11150|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11151|11159|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11164|11173|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11213|11220|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11221|11229|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11234|11243|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+   Method End: getHPIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+   Method Start: getSpAttIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11305|11309|poke|param|com.outflows.pokalert.alert.PokemonDetection|getSpAttIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11279|11289|getSpAttIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpAttIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11290|11304|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11316|11322|String|class|java.lang.String
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11329|11333|poke|param|com.outflows.pokalert.alert.PokemonDetection|getSpAttIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11334|11346|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11349|11357|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11379|11386|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11411|11417|charAt|method|java.lang.CharSequence|charAt|(I)C
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11447|11454|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11455|11463|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11468|11477|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11517|11524|Integer|class|java.lang.Integer
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11525|11533|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11538|11547|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+   Method End: getSpAttIV(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+   Method Start: calculateIVPerc(IIIIII)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11603|11606|att|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|att|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11612|11615|def|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|def|1
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11621|11626|spdef|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|spdef|2
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11632|11637|spatt|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|spatt|3
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11643|11646|spe|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|spe|4
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11652|11654|hp|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|hp|5
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11583|11598|calculateIVPerc|method|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11685|11688|att|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|att|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11689|11692|def|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|def|1
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11693|11698|spdef|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|spdef|2
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11699|11704|spatt|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|spatt|3
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11705|11708|spe|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|spe|4
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11709|11711|hp|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(IIIIII)I|hp|5
+   Method End: calculateIVPerc(IIIIII)I
+   Method Start: calculateIVPerc(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11773|11777|poke|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11742|11757|calculateIVPerc|method|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11758|11772|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11808|11825|calculateTotalIVS|method|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11826|11830|poke|param|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+   Method End: calculateIVPerc(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+   Method Start: calculateTotalIVS(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11895|11899|poke|param|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11862|11879|calculateTotalIVS|method|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11880|11894|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11913|11921|getDefIV|method|com.outflows.pokalert.alert.PokemonDetection|getDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11922|11926|poke|param|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11928|11939|getAttackIV|method|com.outflows.pokalert.alert.PokemonDetection|getAttackIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11940|11944|poke|param|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11946|11956|getSpDefIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11957|11961|poke|param|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11963|11973|getSpAttIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpAttIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11974|11978|poke|param|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11980|11990|getSpeedIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpeedIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11991|11995|poke|param|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|11997|12004|getHPIV|method|com.outflows.pokalert.alert.PokemonDetection|getHPIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12005|12009|poke|param|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I|poke|0
+   Method End: calculateTotalIVS(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+   Method Start: printIVS(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12054|12058|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12068|12076|usePChat|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|usePChat|1
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12030|12038|printIVS|method|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12039|12053|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12086|12094|usePChat|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|usePChat|1
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12107|12112|pChat|method|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12125|12133|getDefIV|method|com.outflows.pokalert.alert.PokemonDetection|getDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12134|12138|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12146|12151|pChat|method|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12163|12174|getAttackIV|method|com.outflows.pokalert.alert.PokemonDetection|getAttackIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12175|12179|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12187|12192|pChat|method|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12213|12223|getSpDefIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12224|12228|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12236|12241|pChat|method|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12261|12271|getSpAttIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpAttIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12272|12276|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12284|12289|pChat|method|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12297|12304|getHPIV|method|com.outflows.pokalert.alert.PokemonDetection|getHPIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12305|12309|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12317|12322|pChat|method|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12333|12343|getSpeedIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpeedIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12344|12348|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12356|12361|pChat|method|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12372|12389|calculateTotalIVS|method|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12390|12394|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12406|12421|calculateIVPerc|method|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12422|12426|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12453|12464|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12465|12469|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12470|12484|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12492|12503|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12516|12524|getDefIV|method|com.outflows.pokalert.alert.PokemonDetection|getDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12525|12529|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12539|12550|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12562|12573|getAttackIV|method|com.outflows.pokalert.alert.PokemonDetection|getAttackIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12574|12578|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12585|12596|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12617|12627|getSpDefIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpDefIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12628|12632|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12639|12650|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12670|12680|getSpAttIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpAttIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12681|12685|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12692|12703|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12711|12718|getHPIV|method|com.outflows.pokalert.alert.PokemonDetection|getHPIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12719|12723|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12730|12741|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12752|12762|getSpeedIV|method|com.outflows.pokalert.alert.PokemonDetection|getSpeedIV|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12763|12767|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12774|12785|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12796|12813|calculateTotalIVS|method|com.outflows.pokalert.alert.PokemonDetection|calculateTotalIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12814|12818|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12830|12845|calculateIVPerc|method|com.outflows.pokalert.alert.PokemonDetection|calculateIVPerc|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;)I
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12846|12850|poke|param|com.outflows.pokalert.alert.PokemonDetection|printIVS|(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V|poke|0
+   Method End: printIVS(Lcom/pixelmonmod/pixelmon/entities/pixelmon/EntityPixelmon;Z)V
+   Method Start: displayPopUp(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13000|13007|message|param|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V|message|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12980|12992|displayPopUp|method|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|12993|12999|String|class|java.lang.String
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13014|13025|JOptionPane|class|javax.swing.JOptionPane
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13037|13048|JOptionPane|class|javax.swing.JOptionPane
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13059|13069|setMessage|method|javax.swing.JOptionPane|setMessage|(Ljava/lang/Object;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13070|13077|message|param|com.outflows.pokalert.alert.PokemonDetection|displayPopUp|(Ljava/lang/String;)V|message|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13082|13089|JDialog|class|javax.swing.JDialog
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13104|13116|createDialog|method|javax.swing.JOptionPane|createDialog|(Ljava/lang/String;)Ljavax/swing/JDialog;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13147|13161|setAlwaysOnTop|method|java.awt.Window|setAlwaysOnTop|(Z)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13178|13188|setVisible|method|java.awt.Component|setVisible|(Z)V
+   Method End: displayPopUp(Ljava/lang/String;)V
+   Method Start: pChat(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13555|13562|message|param|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V|message|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13542|13547|pChat|method|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13548|13554|String|class|java.lang.String
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13569|13578|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13579|13591|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13594|13600|player|field|net.minecraft.client.Minecraft|player
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13601|13616|sendChatMessage|method|net.minecraft.client.entity.EntityPlayerSP|sendChatMessage|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13617|13624|message|param|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V|message|0
+   Method End: pChat(Ljava/lang/String;)V
+   Method Start: privateChat(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13671|13678|message|param|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V|message|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13652|13663|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13664|13670|String|class|java.lang.String
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13685|13699|ITextComponent|class|net.minecraft.util.text.ITextComponent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13708|13727|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13728|13735|message|param|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V|message|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13740|13749|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13750|13762|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13765|13771|player|field|net.minecraft.client.Minecraft|player
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13772|13783|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+   Method End: privateChat(Ljava/lang/String;)V
+   Method Start: isInArray(C[C)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13824|13825|x|param|com.outflows.pokalert.alert.PokemonDetection|isInArray|(C[C)Z|x|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13834|13841|letters|param|com.outflows.pokalert.alert.PokemonDetection|isInArray|(C[C)Z|letters|1
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13809|13818|isInArray|method|com.outflows.pokalert.alert.PokemonDetection|isInArray|(C[C)Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13860|13867|letters|param|com.outflows.pokalert.alert.PokemonDetection|isInArray|(C[C)Z|letters|1
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13879|13880|x|param|com.outflows.pokalert.alert.PokemonDetection|isInArray|(C[C)Z|x|0
+   Method End: isInArray(C[C)Z
+   Method Start: printButtons(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13985|13990|event|param|com.outflows.pokalert.alert.PokemonDetection|printButtons|(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent;)V|event|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13931|13945|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13959|13971|printButtons|method|com.outflows.pokalert.alert.PokemonDetection|printButtons|(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|13972|13984|InitGuiEvent|class|net.minecraftforge.client.event.GuiScreenEvent.InitGuiEvent
+   Method End: printButtons(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent;)V
+   Method Start: updateKeys(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14119|14124|event|param|com.outflows.pokalert.alert.PokemonDetection|updateKeys|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14055|14069|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14083|14093|updateKeys|method|com.outflows.pokalert.alert.PokemonDetection|updateKeys|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14094|14118|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14135|14142|glowing|field|com.outflows.pokalert.alert.PokemonDetection|glowing
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14143|14152|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14168|14185|glowingInProgress|field|com.outflows.pokalert.alert.PokemonDetection|glowingInProgress
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14202|14216|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14225|14232|targets|field|com.outflows.pokalert.alert.PokemonDetection|targets
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14247|14258|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14266|14273|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14291|14301|setGlowing|method|net.minecraft.entity.Entity|setGlowing|(Z)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14329|14340|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14377|14394|glowingInProgress|field|com.outflows.pokalert.alert.PokemonDetection|glowingInProgress
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14434|14448|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14457|14464|targets|field|com.outflows.pokalert.alert.PokemonDetection|targets
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14488|14498|setGlowing|method|net.minecraft.entity.Entity|setGlowing|(Z)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14525|14536|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14571|14588|glowingInProgress|field|com.outflows.pokalert.alert.PokemonDetection|glowingInProgress
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14614|14617|swo|field|com.outflows.pokalert.alert.PokemonDetection|swo
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14618|14627|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14643|14656|swoInProgress|field|com.outflows.pokalert.alert.PokemonDetection|swoInProgress
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14673|14687|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14696|14703|targets|field|com.outflows.pokalert.alert.PokemonDetection|targets
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14729|14737|hasOwner|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|hasOwner|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14765|14775|setGlowing|method|net.minecraft.entity.Entity|setGlowing|(Z)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14812|14823|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14874|14887|swoInProgress|field|com.outflows.pokalert.alert.PokemonDetection|swoInProgress
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14927|14941|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14950|14957|targets|field|com.outflows.pokalert.alert.PokemonDetection|targets
+      @|com\outflows\pokalert\alert\PokemonDetection.java|14983|14991|hasOwner|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|hasOwner|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15019|15029|setGlowing|method|net.minecraft.entity.Entity|setGlowing|(Z)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15064|15075|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15122|15135|swoInProgress|field|com.outflows.pokalert.alert.PokemonDetection|swoInProgress
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15161|15164|box|field|com.outflows.pokalert.alert.PokemonDetection|box
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15165|15174|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15190|15203|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15216|15229|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15244|15255|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15315|15328|showDialogBox|field|com.outflows.pokalert.alert.PokemonDetection|showDialogBox
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15342|15353|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+   Method End: updateKeys(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+   Method Start: run()V
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15399|15407|Override|class|java.lang.Override
+      @|com\outflows\pokalert\alert\PokemonDetection.java|15421|15424|run|method|java.lang.Runnable|run|()V
+   Method End: run()V
+Class End  : com.outflows.pokalert.alert.PokemonDetection
+endProcessing "com\outflows\pokalert\alert\PokemonDetection.java"
+
+startProcessing "com\outflows\pokalert\alert\Relog.java" md5: ff70b12021a525d6e684c59294ed96ff
+Cache Hit!
+@|com\outflows\pokalert\alert\Relog.java|8|35|com.outflows.pokalert.alert|package|com.outflows.pokalert.alert|(file)
+Class Start: com.outflows.pokalert.alert.Relog
+   @|com\outflows\pokalert\alert\Relog.java|525|530|Relog|class|com.outflows.pokalert.alert.Relog
+   @|com\outflows\pokalert\alert\Relog.java|549|559|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\Relog.java|549|559|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\Relog.java|560|565|relog|field|com.outflows.pokalert.alert.Relog|relog|
+   @|com\outflows\pokalert\alert\Relog.java|568|576|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\alert\Relog.java|577|582|relog|field|com.outflows.pokalert.pokalert|relog
+   Method Start: joinBack(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedOutEvent;)V
+      @|com\outflows\pokalert\alert\Relog.java|646|651|event|param|com.outflows.pokalert.alert.Relog|joinBack|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedOutEvent;)V|event|0
+      @|com\outflows\pokalert\alert\Relog.java|588|602|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\Relog.java|616|624|joinBack|method|com.outflows.pokalert.alert.Relog|joinBack|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedOutEvent;)V
+      @|com\outflows\pokalert\alert\Relog.java|625|645|PlayerLoggedOutEvent|class|net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedOutEvent
+      @|com\outflows\pokalert\alert\Relog.java|658|664|System|class|java.lang.System
+      @|com\outflows\pokalert\alert\Relog.java|665|668|out|field|java.lang.System|out
+      @|com\outflows\pokalert\alert\Relog.java|669|676|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+   Method End: joinBack(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedOutEvent;)V
+Class End  : com.outflows.pokalert.alert.Relog
+endProcessing "com\outflows\pokalert\alert\Relog.java"
+
+startProcessing "com\outflows\pokalert\alert\Teleport.java" md5: ecb2805f9ed9ab3f7ce2ce954ae52a0d
+Cache Hit!
+@|com\outflows\pokalert\alert\Teleport.java|8|35|com.outflows.pokalert.alert|package|com.outflows.pokalert.alert|(file)
+Class Start: com.outflows.pokalert.alert.Teleport
+   @|com\outflows\pokalert\alert\Teleport.java|586|594|Teleport|class|com.outflows.pokalert.alert.Teleport
+   @|com\outflows\pokalert\alert\Teleport.java|622|632|inProgress|field|com.outflows.pokalert.alert.Teleport|inProgress|
+   @|com\outflows\pokalert\alert\Teleport.java|662|669|counter|field|com.outflows.pokalert.alert.Teleport|counter|
+   @|com\outflows\pokalert\alert\Teleport.java|691|701|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\Teleport.java|691|701|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\alert\Teleport.java|702|704|kb|field|com.outflows.pokalert.alert.Teleport|kb|
+   @|com\outflows\pokalert\alert\Teleport.java|707|715|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\alert\Teleport.java|716|718|tp|field|com.outflows.pokalert.pokalert|tp
+   Method Start: teleportInitiate(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com\outflows\pokalert\alert\Teleport.java|794|799|event|param|com.outflows.pokalert.alert.Teleport|teleportInitiate|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
+      @|com\outflows\pokalert\alert\Teleport.java|724|738|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\Teleport.java|752|768|teleportInitiate|method|com.outflows.pokalert.alert.Teleport|teleportInitiate|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com\outflows\pokalert\alert\Teleport.java|769|793|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent
+      @|com\outflows\pokalert\alert\Teleport.java|855|860|World|class|net.minecraft.world.World
+      @|com\outflows\pokalert\alert\Teleport.java|869|878|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\Teleport.java|879|891|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\Teleport.java|894|899|world|field|net.minecraft.client.Minecraft|world
+      @|com\outflows\pokalert\alert\Teleport.java|934|936|kb|field|com.outflows.pokalert.alert.Teleport|kb
+      @|com\outflows\pokalert\alert\Teleport.java|937|946|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com\outflows\pokalert\alert\Teleport.java|959|966|counter|field|com.outflows.pokalert.alert.Teleport|counter
+      @|com\outflows\pokalert\alert\Teleport.java|980|990|inProgress|field|com.outflows.pokalert.alert.Teleport|inProgress
+      @|com\outflows\pokalert\alert\Teleport.java|1003|1019|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\alert\Teleport.java|1020|1025|pChat|method|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\Teleport.java|1040|1050|inProgress|field|com.outflows.pokalert.alert.Teleport|inProgress
+      @|com\outflows\pokalert\alert\Teleport.java|1064|1080|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\alert\Teleport.java|1081|1092|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\Teleport.java|1133|1143|inProgress|field|com.outflows.pokalert.alert.Teleport|inProgress
+      @|com\outflows\pokalert\alert\Teleport.java|1156|1166|inProgress|field|com.outflows.pokalert.alert.Teleport|inProgress
+      @|com\outflows\pokalert\alert\Teleport.java|1181|1197|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\alert\Teleport.java|1198|1209|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\Teleport.java|1260|1276|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\alert\Teleport.java|1277|1288|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+   Method End: teleportInitiate(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+   Method Start: countUp(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com\outflows\pokalert\alert\Teleport.java|1427|1432|event|param|com.outflows.pokalert.alert.Teleport|countUp|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|com\outflows\pokalert\alert\Teleport.java|1375|1389|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\Teleport.java|1403|1410|countUp|method|com.outflows.pokalert.alert.Teleport|countUp|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com\outflows\pokalert\alert\Teleport.java|1411|1426|ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
+      @|com\outflows\pokalert\alert\Teleport.java|1439|1451|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\outflows\pokalert\alert\Teleport.java|1461|1470|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\Teleport.java|1471|1483|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\Teleport.java|1486|1492|player|field|net.minecraft.client.Minecraft|player
+      @|com\outflows\pokalert\alert\Teleport.java|1496|1501|World|class|net.minecraft.world.World
+      @|com\outflows\pokalert\alert\Teleport.java|1510|1519|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\alert\Teleport.java|1520|1532|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\alert\Teleport.java|1535|1540|world|field|net.minecraft.client.Minecraft|world
+      @|com\outflows\pokalert\alert\Teleport.java|1571|1573|kb|field|com.outflows.pokalert.alert.Teleport|kb
+      @|com\outflows\pokalert\alert\Teleport.java|1574|1583|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com\outflows\pokalert\alert\Teleport.java|1596|1603|counter|field|com.outflows.pokalert.alert.Teleport|counter
+      @|com\outflows\pokalert\alert\Teleport.java|1625|1635|inProgress|field|com.outflows.pokalert.alert.Teleport|inProgress
+      @|com\outflows\pokalert\alert\Teleport.java|1649|1656|counter|field|com.outflows.pokalert.alert.Teleport|counter
+      @|com\outflows\pokalert\alert\Teleport.java|1669|1676|counter|field|com.outflows.pokalert.alert.Teleport|counter
+      @|com\outflows\pokalert\alert\Teleport.java|1710|1714|move|method|net.minecraft.entity.Entity|move|(Lnet/minecraft/entity/MoverType;DDD)V
+      @|com\outflows\pokalert\alert\Teleport.java|1715|1724|MoverType|class|net.minecraft.entity.MoverType
+      @|com\outflows\pokalert\alert\Teleport.java|1725|1731|PLAYER|field|net.minecraft.entity.MoverType|PLAYER
+      @|com\outflows\pokalert\alert\Teleport.java|1766|1773|counter|field|com.outflows.pokalert.alert.Teleport|counter
+      @|com\outflows\pokalert\alert\Teleport.java|1797|1804|counter|field|com.outflows.pokalert.alert.Teleport|counter
+      @|com\outflows\pokalert\alert\Teleport.java|1815|1831|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\alert\Teleport.java|1832|1837|pChat|method|com.outflows.pokalert.alert.PokemonDetection|pChat|(Ljava/lang/String;)V
+   Method End: countUp(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+   Method Start: leftServer(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedOutEvent;)V
+      @|com\outflows\pokalert\alert\Teleport.java|1947|1952|event|param|com.outflows.pokalert.alert.Teleport|leftServer|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedOutEvent;)V|event|0
+      @|com\outflows\pokalert\alert\Teleport.java|1875|1889|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\alert\Teleport.java|1903|1913|leftServer|method|com.outflows.pokalert.alert.Teleport|leftServer|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedOutEvent;)V
+      @|com\outflows\pokalert\alert\Teleport.java|1914|1946|PlayerEvent.PlayerLoggedOutEvent|class|net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedOutEvent
+      @|com\outflows\pokalert\alert\Teleport.java|1959|1965|System|class|java.lang.System
+      @|com\outflows\pokalert\alert\Teleport.java|1966|1969|out|field|java.lang.System|out
+      @|com\outflows\pokalert\alert\Teleport.java|1970|1977|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\Teleport.java|1989|1999|inProgress|field|com.outflows.pokalert.alert.Teleport|inProgress
+   Method End: leftServer(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedOutEvent;)V
+   Method Start: getInProgress()Z
+      @|com\outflows\pokalert\alert\Teleport.java|2037|2050|getInProgress|method|com.outflows.pokalert.alert.Teleport|getInProgress|()Z
+      @|com\outflows\pokalert\alert\Teleport.java|2065|2075|inProgress|field|com.outflows.pokalert.alert.Teleport|inProgress
+   Method End: getInProgress()Z
+   Method Start: cancelTPTask()V
+      @|com\outflows\pokalert\alert\Teleport.java|2102|2114|cancelTPTask|method|com.outflows.pokalert.alert.Teleport|cancelTPTask|()V
+      @|com\outflows\pokalert\alert\Teleport.java|2125|2135|inProgress|field|com.outflows.pokalert.alert.Teleport|inProgress
+      @|com\outflows\pokalert\alert\Teleport.java|2150|2166|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\alert\Teleport.java|2167|2178|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\alert\Teleport.java|2208|2215|counter|field|com.outflows.pokalert.alert.Teleport|counter
+   Method End: cancelTPTask()V
+Class End  : com.outflows.pokalert.alert.Teleport
+endProcessing "com\outflows\pokalert\alert\Teleport.java"
+
+startProcessing "com\outflows\pokalert\chat\ChatItems.java" md5: 27bb77dc691446d28b36275e36c6251c
+Cache Hit!
+@|com\outflows\pokalert\chat\ChatItems.java|8|34|com.outflows.pokalert.chat|package|com.outflows.pokalert.chat|(file)
+Class Start: com.outflows.pokalert.chat.ChatItems
+   @|com\outflows\pokalert\chat\ChatItems.java|867|876|ChatItems|class|com.outflows.pokalert.chat.ChatItems
+   @|com\outflows\pokalert\chat\ChatItems.java|904|916|wbInProgress|field|com.outflows.pokalert.chat.ChatItems|wbInProgress|
+   @|com\outflows\pokalert\chat\ChatItems.java|950|967|welcomeInProgress|field|com.outflows.pokalert.chat.ChatItems|welcomeInProgress|
+   @|com\outflows\pokalert\chat\ChatItems.java|993|1003|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\chat\ChatItems.java|993|1003|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\chat\ChatItems.java|1004|1006|wb|field|com.outflows.pokalert.chat.ChatItems|wb|
+   @|com\outflows\pokalert\chat\ChatItems.java|1009|1017|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\chat\ChatItems.java|1018|1020|wb|field|com.outflows.pokalert.pokalert|wb
+   @|com\outflows\pokalert\chat\ChatItems.java|1038|1048|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\chat\ChatItems.java|1038|1048|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\chat\ChatItems.java|1049|1056|welcome|field|com.outflows.pokalert.chat.ChatItems|welcome|
+   @|com\outflows\pokalert\chat\ChatItems.java|1059|1067|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\chat\ChatItems.java|1068|1075|welcome|field|com.outflows.pokalert.pokalert|welcome
+   @|com\outflows\pokalert\chat\ChatItems.java|1103|1113|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\chat\ChatItems.java|1093|1102|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\chat\ChatItems.java|1093|1102|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\chat\ChatItems.java|1103|1113|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\chat\ChatItems.java|1115|1118|kbs|field|com.outflows.pokalert.chat.ChatItems|kbs|
+   @|com\outflows\pokalert\chat\ChatItems.java|1125|1134|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\chat\ChatItems.java|1137|1143|Arrays|class|java.util.Arrays
+   @|com\outflows\pokalert\chat\ChatItems.java|1144|1150|asList|method|java.util.Arrays|asList|([Ljava/lang/Object;)Ljava/util/List;
+   @|com\outflows\pokalert\chat\ChatItems.java|1151|1153|wb|field|com.outflows.pokalert.chat.ChatItems|wb
+   @|com\outflows\pokalert\chat\ChatItems.java|1155|1162|welcome|field|com.outflows.pokalert.chat.ChatItems|welcome
+   Method Start: giveItems(Lnet/minecraftforge/event/ServerChatEvent;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|1222|1227|event|param|com.outflows.pokalert.chat.ChatItems|giveItems|(Lnet/minecraftforge/event/ServerChatEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|1168|1182|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\chat\ChatItems.java|1196|1205|giveItems|method|com.outflows.pokalert.chat.ChatItems|giveItems|(Lnet/minecraftforge/event/ServerChatEvent;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|1206|1221|ServerChatEvent|class|net.minecraftforge.event.ServerChatEvent
+      @|com\outflows\pokalert\chat\ChatItems.java|1237|1242|event|param|com.outflows.pokalert.chat.ChatItems|giveItems|(Lnet/minecraftforge/event/ServerChatEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|1243|1253|getMessage|method|net.minecraftforge.event.ServerChatEvent|getMessage|()Ljava/lang/String;
+      @|com\outflows\pokalert\chat\ChatItems.java|1256|1264|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\outflows\pokalert\chat\ChatItems.java|1281|1286|event|param|com.outflows.pokalert.chat.ChatItems|giveItems|(Lnet/minecraftforge/event/ServerChatEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|1287|1296|getPlayer|method|net.minecraftforge.event.ServerChatEvent|getPlayer|()Lnet/minecraft/entity/player/EntityPlayerMP;
+      @|com\outflows\pokalert\chat\ChatItems.java|1299|1308|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com\outflows\pokalert\chat\ChatItems.java|1309|1332|addItemStackToInventory|method|net.minecraft.entity.player.InventoryPlayer|addItemStackToInventory|(Lnet/minecraft/item/ItemStack;)Z
+      @|com\outflows\pokalert\chat\ChatItems.java|1337|1346|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\outflows\pokalert\chat\ChatItems.java|1347|1352|Items|class|net.minecraft.init.Items
+      @|com\outflows\pokalert\chat\ChatItems.java|1353|1359|POTATO|field|net.minecraft.init.Items|POTATO
+   Method End: giveItems(Lnet/minecraftforge/event/ServerChatEvent;)V
+   Method Start: welcome(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|1704|1709|event|param|com.outflows.pokalert.chat.ChatItems|welcome|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|1643|1657|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\chat\ChatItems.java|1672|1679|welcome|method|com.outflows.pokalert.chat.ChatItems|welcome|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|1680|1703|ClientChatReceivedEvent|class|net.minecraftforge.client.event.ClientChatReceivedEvent
+      @|com\outflows\pokalert\chat\ChatItems.java|1719|1724|event|param|com.outflows.pokalert.chat.ChatItems|welcome|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|1725|1735|getMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|getMessage|()Lnet/minecraft/util/text/ITextComponent;
+      @|com\outflows\pokalert\chat\ChatItems.java|1738|1754|getFormattedText|method|net.minecraft.util.text.ITextComponent|getFormattedText|()Ljava/lang/String;
+      @|com\outflows\pokalert\chat\ChatItems.java|1757|1765|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\outflows\pokalert\chat\ChatItems.java|1780|1797|welcomeInProgress|field|com.outflows.pokalert.chat.ChatItems|welcomeInProgress
+      @|com\outflows\pokalert\chat\ChatItems.java|1807|1812|event|param|com.outflows.pokalert.chat.ChatItems|welcome|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|1813|1820|getType|method|net.minecraftforge.client.event.ClientChatReceivedEvent|getType|()Lnet/minecraft/util/text/ChatType;
+      @|com\outflows\pokalert\chat\ChatItems.java|1823|1829|equals|method|java.lang.Enum|equals|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\chat\ChatItems.java|1830|1838|ChatType|class|net.minecraft.util.text.ChatType
+      @|com\outflows\pokalert\chat\ChatItems.java|1839|1845|SYSTEM|field|net.minecraft.util.text.ChatType|SYSTEM
+      @|com\outflows\pokalert\chat\ChatItems.java|1857|1867|Collection|class|java.util.Collection
+      @|com\outflows\pokalert\chat\ChatItems.java|1868|1885|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|com\outflows\pokalert\chat\ChatItems.java|1897|1906|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\chat\ChatItems.java|1907|1919|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\chat\ChatItems.java|1922|1935|getConnection|method|net.minecraft.client.Minecraft|getConnection|()Lnet/minecraft/client/network/NetHandlerPlayClient;
+      @|com\outflows\pokalert\chat\ChatItems.java|1938|1954|getPlayerInfoMap|method|net.minecraft.client.network.NetHandlerPlayClient|getPlayerInfoMap|()Ljava/util/Collection;
+      @|com\outflows\pokalert\chat\ChatItems.java|2024|2029|pChat|method|com.outflows.pokalert.chat.ChatItems|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|2074|2078|size|method|java.util.Collection|size|()I
+   Method End: welcome(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+   Method Start: welcomeBack(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|2182|2187|event|param|com.outflows.pokalert.chat.ChatItems|welcomeBack|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|2118|2132|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\chat\ChatItems.java|2146|2157|welcomeBack|method|com.outflows.pokalert.chat.ChatItems|welcomeBack|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|2158|2181|ClientChatReceivedEvent|class|net.minecraftforge.client.event.ClientChatReceivedEvent
+      @|com\outflows\pokalert\chat\ChatItems.java|2197|2202|event|param|com.outflows.pokalert.chat.ChatItems|welcomeBack|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|2203|2213|getMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|getMessage|()Lnet/minecraft/util/text/ITextComponent;
+      @|com\outflows\pokalert\chat\ChatItems.java|2216|2234|getUnformattedText|method|net.minecraft.util.text.ITextComponent|getUnformattedText|()Ljava/lang/String;
+      @|com\outflows\pokalert\chat\ChatItems.java|2237|2245|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\outflows\pokalert\chat\ChatItems.java|2256|2268|wbInProgress|field|com.outflows.pokalert.chat.ChatItems|wbInProgress
+      @|com\outflows\pokalert\chat\ChatItems.java|2280|2285|event|param|com.outflows.pokalert.chat.ChatItems|welcomeBack|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|2286|2293|getType|method|net.minecraftforge.client.event.ClientChatReceivedEvent|getType|()Lnet/minecraft/util/text/ChatType;
+      @|com\outflows\pokalert\chat\ChatItems.java|2296|2302|equals|method|java.lang.Enum|equals|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\chat\ChatItems.java|2303|2311|ChatType|class|net.minecraft.util.text.ChatType
+      @|com\outflows\pokalert\chat\ChatItems.java|2312|2318|SYSTEM|field|net.minecraft.util.text.ChatType|SYSTEM
+      @|com\outflows\pokalert\chat\ChatItems.java|2334|2339|pChat|method|com.outflows.pokalert.chat.ChatItems|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|2355|2360|event|param|com.outflows.pokalert.chat.ChatItems|welcomeBack|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|2361|2371|getMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|getMessage|()Lnet/minecraft/util/text/ITextComponent;
+      @|com\outflows\pokalert\chat\ChatItems.java|2374|2392|getUnformattedText|method|net.minecraft.util.text.ITextComponent|getUnformattedText|()Ljava/lang/String;
+      @|com\outflows\pokalert\chat\ChatItems.java|2395|2404|substring|method|java.lang.String|substring|(I)Ljava/lang/String;
+   Method End: welcomeBack(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+   Method Start: updateKeys(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|2492|2497|event|param|com.outflows.pokalert.chat.ChatItems|updateKeys|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
+      @|com\outflows\pokalert\chat\ChatItems.java|2428|2442|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\chat\ChatItems.java|2456|2466|updateKeys|method|com.outflows.pokalert.chat.ChatItems|updateKeys|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|2467|2491|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent
+      @|com\outflows\pokalert\chat\ChatItems.java|2508|2510|wb|field|com.outflows.pokalert.chat.ChatItems|wb
+      @|com\outflows\pokalert\chat\ChatItems.java|2511|2520|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com\outflows\pokalert\chat\ChatItems.java|2536|2548|wbInProgress|field|com.outflows.pokalert.chat.ChatItems|wbInProgress
+      @|com\outflows\pokalert\chat\ChatItems.java|2561|2572|privateChat|method|com.outflows.pokalert.chat.ChatItems|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|2611|2623|wbInProgress|field|com.outflows.pokalert.chat.ChatItems|wbInProgress
+      @|com\outflows\pokalert\chat\ChatItems.java|2659|2670|privateChat|method|com.outflows.pokalert.chat.ChatItems|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|2707|2719|wbInProgress|field|com.outflows.pokalert.chat.ChatItems|wbInProgress
+      @|com\outflows\pokalert\chat\ChatItems.java|2745|2752|welcome|field|com.outflows.pokalert.chat.ChatItems|welcome
+      @|com\outflows\pokalert\chat\ChatItems.java|2753|2762|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com\outflows\pokalert\chat\ChatItems.java|2778|2795|welcomeInProgress|field|com.outflows.pokalert.chat.ChatItems|welcomeInProgress
+      @|com\outflows\pokalert\chat\ChatItems.java|2808|2819|privateChat|method|com.outflows.pokalert.chat.ChatItems|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|2853|2870|welcomeInProgress|field|com.outflows.pokalert.chat.ChatItems|welcomeInProgress
+      @|com\outflows\pokalert\chat\ChatItems.java|2906|2917|privateChat|method|com.outflows.pokalert.chat.ChatItems|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|2949|2966|welcomeInProgress|field|com.outflows.pokalert.chat.ChatItems|welcomeInProgress
+   Method End: updateKeys(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+   Method Start: pChat(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|3018|3025|message|param|com.outflows.pokalert.chat.ChatItems|pChat|(Ljava/lang/String;)V|message|0
+      @|com\outflows\pokalert\chat\ChatItems.java|3005|3010|pChat|method|com.outflows.pokalert.chat.ChatItems|pChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|3011|3017|String|class|java.lang.String
+      @|com\outflows\pokalert\chat\ChatItems.java|3035|3044|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\chat\ChatItems.java|3045|3057|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\chat\ChatItems.java|3060|3066|player|field|net.minecraft.client.Minecraft|player
+      @|com\outflows\pokalert\chat\ChatItems.java|3081|3090|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\chat\ChatItems.java|3091|3103|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\chat\ChatItems.java|3106|3112|player|field|net.minecraft.client.Minecraft|player
+      @|com\outflows\pokalert\chat\ChatItems.java|3113|3128|sendChatMessage|method|net.minecraft.client.entity.EntityPlayerSP|sendChatMessage|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|3129|3136|message|param|com.outflows.pokalert.chat.ChatItems|pChat|(Ljava/lang/String;)V|message|0
+   Method End: pChat(Ljava/lang/String;)V
+   Method Start: privateChat(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|3178|3185|message|param|com.outflows.pokalert.chat.ChatItems|privateChat|(Ljava/lang/String;)V|message|0
+      @|com\outflows\pokalert\chat\ChatItems.java|3159|3170|privateChat|method|com.outflows.pokalert.chat.ChatItems|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\chat\ChatItems.java|3171|3177|String|class|java.lang.String
+      @|com\outflows\pokalert\chat\ChatItems.java|3192|3206|ITextComponent|class|net.minecraft.util.text.ITextComponent
+      @|com\outflows\pokalert\chat\ChatItems.java|3215|3234|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\outflows\pokalert\chat\ChatItems.java|3235|3242|message|param|com.outflows.pokalert.chat.ChatItems|privateChat|(Ljava/lang/String;)V|message|0
+      @|com\outflows\pokalert\chat\ChatItems.java|3247|3256|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\outflows\pokalert\chat\ChatItems.java|3257|3269|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\outflows\pokalert\chat\ChatItems.java|3272|3278|player|field|net.minecraft.client.Minecraft|player
+      @|com\outflows\pokalert\chat\ChatItems.java|3279|3290|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+   Method End: privateChat(Ljava/lang/String;)V
+Class End  : com.outflows.pokalert.chat.ChatItems
+endProcessing "com\outflows\pokalert\chat\ChatItems.java"
+
+startProcessing "com\outflows\pokalert\commands\CommandBase.java" md5: e3f3f0d0581421e39ee1032717aaa3d2
+Cache Hit!
+@|com\outflows\pokalert\commands\CommandBase.java|8|38|com.outflows.pokalert.commands|package|com.outflows.pokalert.commands|(file)
+Class Start: com.outflows.pokalert.commands.CommandBase
+   @|com\outflows\pokalert\commands\CommandBase.java|389|400|CommandBase|class|com.outflows.pokalert.commands.CommandBase
+   @|com\outflows\pokalert\commands\CommandBase.java|412|420|ICommand|class|net.minecraft.command.ICommand
+   @|com\outflows\pokalert\commands\CommandBase.java|443|449|String|class|java.lang.String
+   @|com\outflows\pokalert\commands\CommandBase.java|433|442|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\commands\CommandBase.java|433|442|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\commands\CommandBase.java|443|449|String|class|java.lang.String
+   @|com\outflows\pokalert\commands\CommandBase.java|451|458|aliases|field|com.outflows.pokalert.commands.CommandBase|aliases|
+   @|com\outflows\pokalert\commands\CommandBase.java|465|474|ArrayList|class|java.util.ArrayList
+   @|com\outflows\pokalert\commands\CommandBase.java|489|495|String|class|java.lang.String
+   @|com\outflows\pokalert\commands\CommandBase.java|489|495|String|class|java.lang.String
+   @|com\outflows\pokalert\commands\CommandBase.java|496|507|commandName|field|com.outflows.pokalert.commands.CommandBase|commandName|
+   Method Start: CommandBase(Ljava/util/ArrayList;Ljava/lang/String;)V
+      @|com\outflows\pokalert\commands\CommandBase.java|549|558|aliasList|param|com.outflows.pokalert.commands.CommandBase|CommandBase|(Ljava/util/ArrayList;Ljava/lang/String;)V|aliasList|0
+      @|com\outflows\pokalert\commands\CommandBase.java|567|578|commandName|param|com.outflows.pokalert.commands.CommandBase|CommandBase|(Ljava/util/ArrayList;Ljava/lang/String;)V|commandName|1
+      @|com\outflows\pokalert\commands\CommandBase.java|519|530|CommandBase|method|com.outflows.pokalert.commands.CommandBase|CommandBase|(Ljava/util/ArrayList;Ljava/lang/String;)V
+      @|com\outflows\pokalert\commands\CommandBase.java|531|540|ArrayList|class|java.util.ArrayList
+      @|com\outflows\pokalert\commands\CommandBase.java|541|547|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|560|566|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|589|595|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|602|611|aliasList|param|com.outflows.pokalert.commands.CommandBase|CommandBase|(Ljava/util/ArrayList;Ljava/lang/String;)V|aliasList|0
+      @|com\outflows\pokalert\commands\CommandBase.java|625|632|aliases|field|com.outflows.pokalert.commands.CommandBase|aliases
+      @|com\outflows\pokalert\commands\CommandBase.java|633|636|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\outflows\pokalert\commands\CommandBase.java|655|666|commandName|field|com.outflows.pokalert.commands.CommandBase|commandName
+      @|com\outflows\pokalert\commands\CommandBase.java|669|680|commandName|param|com.outflows.pokalert.commands.CommandBase|CommandBase|(Ljava/util/ArrayList;Ljava/lang/String;)V|commandName|1
+   Method End: CommandBase(Ljava/util/ArrayList;Ljava/lang/String;)V
+   Method Start: getCommandName()Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|694|700|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|701|715|getCommandName|method|com.outflows.pokalert.commands.CommandBase|getCommandName|()Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|735|746|commandName|field|com.outflows.pokalert.commands.CommandBase|commandName
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|798|812|icommandsender|param|com.outflows.pokalert.commands.CommandBase|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|icommandsender|0
+      @|com\outflows\pokalert\commands\CommandBase.java|760|766|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|767|782|getCommandUsage|method|com.outflows.pokalert.commands.CommandBase|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|783|797|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\outflows\pokalert\commands\CommandBase.java|831|842|commandName|field|com.outflows.pokalert.commands.CommandBase|commandName
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: getCommandAliases()Ljava/util/List;
+      @|com\outflows\pokalert\commands\CommandBase.java|871|875|List|class|java.util.List
+      @|com\outflows\pokalert\commands\CommandBase.java|876|882|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|884|901|getCommandAliases|method|com.outflows.pokalert.commands.CommandBase|getCommandAliases|()Ljava/util/List;
+      @|com\outflows\pokalert\commands\CommandBase.java|921|928|aliases|field|com.outflows.pokalert.commands.CommandBase|aliases
+   Method End: getCommandAliases()Ljava/util/List;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\outflows\pokalert\commands\CommandBase.java|977|991|icommandsender|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|icommandsender|0
+      @|com\outflows\pokalert\commands\CommandBase.java|1002|1009|astring|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|astring|1
+      @|com\outflows\pokalert\commands\CommandBase.java|947|961|processCommand|method|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\outflows\pokalert\commands\CommandBase.java|962|976|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\outflows\pokalert\commands\CommandBase.java|993|999|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|1019|1026|astring|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|astring|1
+      Field: Array Length, skipping
+      @|com\outflows\pokalert\commands\CommandBase.java|1047|1061|icommandsender|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|icommandsender|0
+      @|com\outflows\pokalert\commands\CommandBase.java|1062|1073|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\outflows\pokalert\commands\CommandBase.java|1078|1097|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\outflows\pokalert\commands\CommandBase.java|1134|1149|getCommandUsage|method|com.outflows.pokalert.commands.CommandBase|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|1150|1164|icommandsender|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|icommandsender|0
+      @|com\outflows\pokalert\commands\CommandBase.java|1190|1197|astring|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|astring|1
+      @|com\outflows\pokalert\commands\CommandBase.java|1219|1233|icommandsender|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|icommandsender|0
+      @|com\outflows\pokalert\commands\CommandBase.java|1234|1245|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\outflows\pokalert\commands\CommandBase.java|1250|1269|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\outflows\pokalert\commands\CommandBase.java|1287|1302|getCommandUsage|method|com.outflows.pokalert.commands.CommandBase|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|1303|1317|icommandsender|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|icommandsender|0
+      @|com\outflows\pokalert\commands\CommandBase.java|1346|1365|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\outflows\pokalert\commands\CommandBase.java|1376|1395|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\outflows\pokalert\commands\CommandBase.java|1431|1438|astring|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|astring|1
+      Field: Array Length, skipping
+      @|com\outflows\pokalert\commands\CommandBase.java|1463|1473|appendText|method|net.minecraft.util.text.ITextComponent|appendText|(Ljava/lang/String;)Lnet/minecraft/util/text/ITextComponent;
+      @|com\outflows\pokalert\commands\CommandBase.java|1480|1487|astring|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|astring|1
+      @|com\outflows\pokalert\commands\CommandBase.java|1503|1513|appendText|method|net.minecraft.util.text.ITextComponent|appendText|(Ljava/lang/String;)Lnet/minecraft/util/text/ITextComponent;
+      @|com\outflows\pokalert\commands\CommandBase.java|1523|1537|icommandsender|param|com.outflows.pokalert.commands.CommandBase|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|icommandsender|0
+      @|com\outflows\pokalert\commands\CommandBase.java|1538|1549|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+   Method Start: canCommandSenderUseCommand(Lnet/minecraft/command/ICommandSender;)Z
+      @|com\outflows\pokalert\commands\CommandBase.java|1623|1637|icommandsender|param|com.outflows.pokalert.commands.CommandBase|canCommandSenderUseCommand|(Lnet/minecraft/command/ICommandSender;)Z|icommandsender|0
+      @|com\outflows\pokalert\commands\CommandBase.java|1581|1607|canCommandSenderUseCommand|method|com.outflows.pokalert.commands.CommandBase|canCommandSenderUseCommand|(Lnet/minecraft/command/ICommandSender;)Z
+      @|com\outflows\pokalert\commands\CommandBase.java|1608|1622|ICommandSender|class|net.minecraft.command.ICommandSender
+   Method End: canCommandSenderUseCommand(Lnet/minecraft/command/ICommandSender;)Z
+   Method Start: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+      @|com\outflows\pokalert\commands\CommandBase.java|1715|1729|icommandsender|param|com.outflows.pokalert.commands.CommandBase|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;|icommandsender|0
+      @|com\outflows\pokalert\commands\CommandBase.java|1741|1748|astring|param|com.outflows.pokalert.commands.CommandBase|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;|astring|1
+      @|com\outflows\pokalert\commands\CommandBase.java|1668|1672|List|class|java.util.List
+      @|com\outflows\pokalert\commands\CommandBase.java|1676|1699|addTabCompletionOptions|method|com.outflows.pokalert.commands.CommandBase|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+      @|com\outflows\pokalert\commands\CommandBase.java|1700|1714|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\outflows\pokalert\commands\CommandBase.java|1732|1738|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|1761|1768|aliases|field|com.outflows.pokalert.commands.CommandBase|aliases
+   Method End: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+   Method Start: isUsernameIndex([Ljava/lang/String;I)Z
+      @|com\outflows\pokalert\commands\CommandBase.java|1826|1833|astring|param|com.outflows.pokalert.commands.CommandBase|isUsernameIndex|([Ljava/lang/String;I)Z|astring|0
+      @|com\outflows\pokalert\commands\CommandBase.java|1839|1840|i|param|com.outflows.pokalert.commands.CommandBase|isUsernameIndex|([Ljava/lang/String;I)Z|i|1
+      @|com\outflows\pokalert\commands\CommandBase.java|1776|1784|Override|class|java.lang.Override
+      @|com\outflows\pokalert\commands\CommandBase.java|1801|1816|isUsernameIndex|method|net.minecraft.command.ICommand|isUsernameIndex|([Ljava/lang/String;I)Z
+      @|com\outflows\pokalert\commands\CommandBase.java|1817|1823|String|class|java.lang.String
+   Method End: isUsernameIndex([Ljava/lang/String;I)Z
+   Method Start: compareTo(Lnet/minecraft/command/ICommand;)I
+      @|com\outflows\pokalert\commands\CommandBase.java|1906|1910|arg0|param|com.outflows.pokalert.commands.CommandBase|compareTo|(Lnet/minecraft/command/ICommand;)I|arg0|0
+      @|com\outflows\pokalert\commands\CommandBase.java|1866|1874|Override|class|java.lang.Override
+      @|com\outflows\pokalert\commands\CommandBase.java|1887|1896|compareTo|method|java.lang.Comparable|compareTo|(Ljava/lang/Object;)I
+      @|com\outflows\pokalert\commands\CommandBase.java|1897|1905|ICommand|class|net.minecraft.command.ICommand
+   Method End: compareTo(Lnet/minecraft/command/ICommand;)I
+   Method Start: getName()Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|1969|1977|Override|class|java.lang.Override
+      @|com\outflows\pokalert\commands\CommandBase.java|1986|1992|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|1993|2000|getName|method|net.minecraft.command.ICommand|getName|()Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|2056|2067|commandName|field|com.outflows.pokalert.commands.CommandBase|commandName
+   Method End: getName()Ljava/lang/String;
+   Method Start: getUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|2123|2129|sender|param|com.outflows.pokalert.commands.CommandBase|getUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+      @|com\outflows\pokalert\commands\CommandBase.java|2075|2083|Override|class|java.lang.Override
+      @|com\outflows\pokalert\commands\CommandBase.java|2092|2098|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|2099|2107|getUsage|method|net.minecraft.command.ICommand|getUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|2108|2122|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\outflows\pokalert\commands\CommandBase.java|2179|2194|getCommandUsage|method|com.outflows.pokalert.commands.CommandBase|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\outflows\pokalert\commands\CommandBase.java|2195|2201|sender|param|com.outflows.pokalert.commands.CommandBase|getUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: getAliases()Ljava/util/List;
+      @|com\outflows\pokalert\commands\CommandBase.java|2210|2218|Override|class|java.lang.Override
+      @|com\outflows\pokalert\commands\CommandBase.java|2227|2231|List|class|java.util.List
+      @|com\outflows\pokalert\commands\CommandBase.java|2232|2238|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|2240|2250|getAliases|method|net.minecraft.command.ICommand|getAliases|()Ljava/util/List;
+      @|com\outflows\pokalert\commands\CommandBase.java|2266|2273|aliases|field|com.outflows.pokalert.commands.CommandBase|aliases
+   Method End: getAliases()Ljava/util/List;
+   Method Start: execute(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\outflows\pokalert\commands\CommandBase.java|2327|2333|server|param|com.outflows.pokalert.commands.CommandBase|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|server|0
+      @|com\outflows\pokalert\commands\CommandBase.java|2350|2356|sender|param|com.outflows.pokalert.commands.CommandBase|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|1
+      @|com\outflows\pokalert\commands\CommandBase.java|2367|2371|args|param|com.outflows.pokalert.commands.CommandBase|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|2
+      @|com\outflows\pokalert\commands\CommandBase.java|2281|2289|Override|class|java.lang.Override
+      @|com\outflows\pokalert\commands\CommandBase.java|2303|2310|execute|method|net.minecraft.command.ICommand|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\outflows\pokalert\commands\CommandBase.java|2311|2326|MinecraftServer|class|net.minecraft.server.MinecraftServer
+      @|com\outflows\pokalert\commands\CommandBase.java|2335|2349|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\outflows\pokalert\commands\CommandBase.java|2358|2364|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|2380|2396|CommandException|class|net.minecraft.command.CommandException
+   Method End: execute(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+   Method Start: checkPermission(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;)Z
+      @|com\outflows\pokalert\commands\CommandBase.java|2467|2473|server|param|com.outflows.pokalert.commands.CommandBase|checkPermission|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;)Z|server|0
+      @|com\outflows\pokalert\commands\CommandBase.java|2490|2496|sender|param|com.outflows.pokalert.commands.CommandBase|checkPermission|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;)Z|sender|1
+      @|com\outflows\pokalert\commands\CommandBase.java|2410|2418|Override|class|java.lang.Override
+      @|com\outflows\pokalert\commands\CommandBase.java|2435|2450|checkPermission|method|net.minecraft.command.ICommand|checkPermission|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;)Z
+      @|com\outflows\pokalert\commands\CommandBase.java|2451|2466|MinecraftServer|class|net.minecraft.server.MinecraftServer
+      @|com\outflows\pokalert\commands\CommandBase.java|2475|2489|ICommandSender|class|net.minecraft.command.ICommandSender
+   Method End: checkPermission(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;)Z
+   Method Start: getTabCompletions(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;
+      @|com\outflows\pokalert\commands\CommandBase.java|2622|2628|server|param|com.outflows.pokalert.commands.CommandBase|getTabCompletions|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;|server|0
+      @|com\outflows\pokalert\commands\CommandBase.java|2645|2651|sender|param|com.outflows.pokalert.commands.CommandBase|getTabCompletions|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;|sender|1
+      @|com\outflows\pokalert\commands\CommandBase.java|2662|2666|args|param|com.outflows.pokalert.commands.CommandBase|getTabCompletions|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;|args|2
+      @|com\outflows\pokalert\commands\CommandBase.java|2680|2689|targetPos|param|com.outflows.pokalert.commands.CommandBase|getTabCompletions|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;|targetPos|3
+      @|com\outflows\pokalert\commands\CommandBase.java|2558|2566|Override|class|java.lang.Override
+      @|com\outflows\pokalert\commands\CommandBase.java|2575|2579|List|class|java.util.List
+      @|com\outflows\pokalert\commands\CommandBase.java|2580|2586|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|2588|2605|getTabCompletions|method|net.minecraft.command.ICommand|getTabCompletions|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;
+      @|com\outflows\pokalert\commands\CommandBase.java|2606|2621|MinecraftServer|class|net.minecraft.server.MinecraftServer
+      @|com\outflows\pokalert\commands\CommandBase.java|2630|2644|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\outflows\pokalert\commands\CommandBase.java|2653|2659|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\CommandBase.java|2671|2679|BlockPos|class|net.minecraft.util.math.BlockPos
+      @|com\outflows\pokalert\commands\CommandBase.java|2704|2711|aliases|field|com.outflows.pokalert.commands.CommandBase|aliases
+   Method End: getTabCompletions(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;
+Class End  : com.outflows.pokalert.commands.CommandBase
+endProcessing "com\outflows\pokalert\commands\CommandBase.java"
+
+startProcessing "com\outflows\pokalert\commands\ListTargetsCommand.java" md5: 4dcebc8826ee868f9f0f27ebbbbedfd9
+Cache Hit!
+@|com\outflows\pokalert\commands\ListTargetsCommand.java|8|38|com.outflows.pokalert.commands|package|com.outflows.pokalert.commands|(file)
+Class Start: com.outflows.pokalert.commands.ListTargetsCommand
+   @|com\outflows\pokalert\commands\ListTargetsCommand.java|374|392|ListTargetsCommand|class|com.outflows.pokalert.commands.ListTargetsCommand
+   @|com\outflows\pokalert\commands\ListTargetsCommand.java|401|412|CommandBase|class|com.outflows.pokalert.commands.CommandBase
+   Method Start: ListTargetsCommand(Ljava/util/ArrayList;)V
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|460|465|alias|param|com.outflows.pokalert.commands.ListTargetsCommand|ListTargetsCommand|(Ljava/util/ArrayList;)V|alias|0
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|423|441|ListTargetsCommand|method|com.outflows.pokalert.commands.ListTargetsCommand|ListTargetsCommand|(Ljava/util/ArrayList;)V
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|442|451|ArrayList|class|java.util.ArrayList
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|452|458|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|478|483|alias|param|com.outflows.pokalert.commands.ListTargetsCommand|ListTargetsCommand|(Ljava/util/ArrayList;)V|alias|0
+   Method End: ListTargetsCommand(Ljava/util/ArrayList;)V
+   Method Start: execute(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|554|560|server|param|com.outflows.pokalert.commands.ListTargetsCommand|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|server|0
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|577|583|sender|param|com.outflows.pokalert.commands.ListTargetsCommand|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|1
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|594|598|args|param|com.outflows.pokalert.commands.ListTargetsCommand|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|2
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|508|516|Override|class|java.lang.Override
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|530|537|execute|method|net.minecraft.command.ICommand|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|538|553|MinecraftServer|class|net.minecraft.server.MinecraftServer
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|562|576|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|585|591|String|class|java.lang.String
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|605|614|ArrayList|class|java.util.ArrayList
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|615|629|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|639|655|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|656|666|getTargets|method|com.outflows.pokalert.alert.PokemonDetection|getTargets|()Ljava/util/ArrayList;
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|676|690|EntityPixelmon|class|com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|711|727|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|728|739|privateChat|method|com.outflows.pokalert.alert.PokemonDetection|privateChat|(Ljava/lang/String;)V
+      @|com\outflows\pokalert\commands\ListTargetsCommand.java|745|759|getPokemonName|method|com.pixelmonmod.pixelmon.entities.pixelmon.Entity1Base|getPokemonName|()Ljava/lang/String;
+   Method End: execute(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+Class End  : com.outflows.pokalert.commands.ListTargetsCommand
+endProcessing "com\outflows\pokalert\commands\ListTargetsCommand.java"
+
+startProcessing "com\outflows\pokalert\pokalert.java" md5: 59f32236b802b1bdd0ba6f42bce527a9
+Cache Hit!
+@|com\outflows\pokalert\pokalert.java|8|29|com.outflows.pokalert|package|com.outflows.pokalert|(file)
+Class Start: com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\pokalert.java|1200|1203|Mod|class|net.minecraftforge.fml.common.Mod
+   @|com\outflows\pokalert\pokalert.java|1204|1209|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com\outflows\pokalert\pokalert.java|1212|1220|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\pokalert.java|1221|1226|MODID|field|com.outflows.pokalert.pokalert|MODID
+   @|com\outflows\pokalert\pokalert.java|1228|1232|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|com\outflows\pokalert\pokalert.java|1235|1243|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\pokalert.java|1244|1248|NAME|field|com.outflows.pokalert.pokalert|NAME
+   @|com\outflows\pokalert\pokalert.java|1250|1257|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com\outflows\pokalert\pokalert.java|1260|1268|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\pokalert.java|1269|1276|VERSION|field|com.outflows.pokalert.pokalert|VERSION
+   @|com\outflows\pokalert\pokalert.java|1278|1290|dependencies|method|net.minecraftforge.fml.common.Mod|dependencies|()Ljava/lang/String;
+   @|com\outflows\pokalert\pokalert.java|1333|1341|pokalert|class|com.outflows.pokalert.pokalert
+   @|com\outflows\pokalert\pokalert.java|1368|1374|String|class|java.lang.String
+   @|com\outflows\pokalert\pokalert.java|1368|1374|String|class|java.lang.String
+   @|com\outflows\pokalert\pokalert.java|1375|1380|MODID|field|com.outflows.pokalert.pokalert|MODID|
+   @|com\outflows\pokalert\pokalert.java|1419|1425|String|class|java.lang.String
+   @|com\outflows\pokalert\pokalert.java|1419|1425|String|class|java.lang.String
+   @|com\outflows\pokalert\pokalert.java|1426|1430|NAME|field|com.outflows.pokalert.pokalert|NAME|
+   @|com\outflows\pokalert\pokalert.java|1469|1475|String|class|java.lang.String
+   @|com\outflows\pokalert\pokalert.java|1469|1475|String|class|java.lang.String
+   @|com\outflows\pokalert\pokalert.java|1476|1483|VERSION|field|com.outflows.pokalert.pokalert|VERSION|
+   @|com\outflows\pokalert\pokalert.java|1513|1523|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1513|1523|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1524|1526|tp|field|com.outflows.pokalert.pokalert|tp|
+   @|com\outflows\pokalert\pokalert.java|1533|1543|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1609|1619|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1609|1619|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1620|1622|wb|field|com.outflows.pokalert.pokalert|wb|
+   @|com\outflows\pokalert\pokalert.java|1629|1639|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1695|1705|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1695|1705|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1706|1710|glow|field|com.outflows.pokalert.pokalert|glow|
+   @|com\outflows\pokalert\pokalert.java|1717|1727|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1786|1796|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1786|1796|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1797|1818|showPokemonWithOwners|field|com.outflows.pokalert.pokalert|showPokemonWithOwners|
+   @|com\outflows\pokalert\pokalert.java|1825|1835|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1901|1911|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1901|1911|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1912|1919|welcome|field|com.outflows.pokalert.pokalert|welcome|
+   @|com\outflows\pokalert\pokalert.java|1926|1936|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1987|1997|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1987|1997|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|1998|2001|box|field|com.outflows.pokalert.pokalert|box|
+   @|com\outflows\pokalert\pokalert.java|2008|2018|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|2073|2083|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|2073|2083|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|2084|2091|antiafk|field|com.outflows.pokalert.pokalert|antiafk|
+   @|com\outflows\pokalert\pokalert.java|2098|2108|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|2160|2170|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|2160|2170|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|2171|2176|relog|field|com.outflows.pokalert.pokalert|relog|
+   @|com\outflows\pokalert\pokalert.java|2183|2193|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\outflows\pokalert\pokalert.java|2249|2255|Logger|class|org.apache.logging.log4j.Logger
+   @|com\outflows\pokalert\pokalert.java|2249|2255|Logger|class|org.apache.logging.log4j.Logger
+   @|com\outflows\pokalert\pokalert.java|2256|2262|logger|field|com.outflows.pokalert.pokalert|logger|
+   Method Start: serverStarting(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
+      @|com\outflows\pokalert\pokalert.java|2341|2346|event|param|com.outflows.pokalert.pokalert|serverStarting|(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V|event|0
+      @|com\outflows\pokalert\pokalert.java|2274|2286|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\outflows\pokalert\pokalert.java|2303|2317|serverStarting|method|com.outflows.pokalert.pokalert|serverStarting|(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
+      @|com\outflows\pokalert\pokalert.java|2318|2340|FMLServerStartingEvent|class|net.minecraftforge.fml.common.event.FMLServerStartingEvent
+      @|com\outflows\pokalert\pokalert.java|2359|2379|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|com\outflows\pokalert\pokalert.java|2380|2388|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|com\outflows\pokalert\pokalert.java|2389|2404|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|com\outflows\pokalert\pokalert.java|2409|2427|ListTargetsCommand|class|com.outflows.pokalert.commands.ListTargetsCommand
+      @|com\outflows\pokalert\pokalert.java|2432|2441|ArrayList|class|java.util.ArrayList
+      @|com\outflows\pokalert\pokalert.java|2444|2450|Arrays|class|java.util.Arrays
+      @|com\outflows\pokalert\pokalert.java|2451|2457|asList|method|java.util.Arrays|asList|([Ljava/lang/Object;)Ljava/util/List;
+   Method End: serverStarting(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\outflows\pokalert\pokalert.java|2562|2567|event|param|com.outflows.pokalert.pokalert|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\outflows\pokalert\pokalert.java|2499|2511|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\outflows\pokalert\pokalert.java|2528|2535|preInit|method|com.outflows.pokalert.pokalert|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\outflows\pokalert\pokalert.java|2536|2561|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\outflows\pokalert\pokalert.java|2580|2594|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\outflows\pokalert\pokalert.java|2595|2613|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com\outflows\pokalert\pokalert.java|2614|2616|tp|field|com.outflows.pokalert.pokalert|tp
+      @|com\outflows\pokalert\pokalert.java|2624|2638|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\outflows\pokalert\pokalert.java|2639|2657|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com\outflows\pokalert\pokalert.java|2658|2660|wb|field|com.outflows.pokalert.pokalert|wb
+      @|com\outflows\pokalert\pokalert.java|2668|2682|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\outflows\pokalert\pokalert.java|2683|2701|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com\outflows\pokalert\pokalert.java|2702|2709|welcome|field|com.outflows.pokalert.pokalert|welcome
+      @|com\outflows\pokalert\pokalert.java|2717|2731|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\outflows\pokalert\pokalert.java|2732|2750|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com\outflows\pokalert\pokalert.java|2751|2755|glow|field|com.outflows.pokalert.pokalert|glow
+      @|com\outflows\pokalert\pokalert.java|2763|2777|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\outflows\pokalert\pokalert.java|2778|2796|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com\outflows\pokalert\pokalert.java|2797|2818|showPokemonWithOwners|field|com.outflows.pokalert.pokalert|showPokemonWithOwners
+      @|com\outflows\pokalert\pokalert.java|2826|2840|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\outflows\pokalert\pokalert.java|2841|2859|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com\outflows\pokalert\pokalert.java|2860|2863|box|field|com.outflows.pokalert.pokalert|box
+      @|com\outflows\pokalert\pokalert.java|2871|2885|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\outflows\pokalert\pokalert.java|2886|2904|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com\outflows\pokalert\pokalert.java|2905|2910|relog|field|com.outflows.pokalert.pokalert|relog
+      @|com\outflows\pokalert\pokalert.java|2918|2932|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\outflows\pokalert\pokalert.java|2933|2951|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com\outflows\pokalert\pokalert.java|2952|2959|antiafk|field|com.outflows.pokalert.pokalert|antiafk
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\outflows\pokalert\pokalert.java|3102|3107|event|param|com.outflows.pokalert.pokalert|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\outflows\pokalert\pokalert.java|3045|3057|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\outflows\pokalert\pokalert.java|3074|3078|init|method|com.outflows.pokalert.pokalert|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\outflows\pokalert\pokalert.java|3079|3101|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\outflows\pokalert\pokalert.java|3120|3134|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\outflows\pokalert\pokalert.java|3135|3144|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\outflows\pokalert\pokalert.java|3145|3153|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\outflows\pokalert\pokalert.java|3158|3166|Teleport|class|com.outflows.pokalert.alert.Teleport
+      @|com\outflows\pokalert\pokalert.java|3176|3190|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\outflows\pokalert\pokalert.java|3191|3200|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\outflows\pokalert\pokalert.java|3201|3209|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\outflows\pokalert\pokalert.java|3214|3230|PokemonDetection|class|com.outflows.pokalert.alert.PokemonDetection
+      @|com\outflows\pokalert\pokalert.java|3240|3254|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\outflows\pokalert\pokalert.java|3255|3264|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\outflows\pokalert\pokalert.java|3265|3273|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\outflows\pokalert\pokalert.java|3278|3287|ChatItems|class|com.outflows.pokalert.chat.ChatItems
+      @|com\outflows\pokalert\pokalert.java|3297|3311|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\outflows\pokalert\pokalert.java|3312|3321|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\outflows\pokalert\pokalert.java|3322|3330|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\outflows\pokalert\pokalert.java|3335|3342|AntiAfk|class|com.outflows.pokalert.alert.AntiAfk
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\outflows\pokalert\pokalert.java|3483|3488|event|param|com.outflows.pokalert.pokalert|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\outflows\pokalert\pokalert.java|3418|3430|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\outflows\pokalert\pokalert.java|3447|3455|postInit|method|com.outflows.pokalert.pokalert|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\outflows\pokalert\pokalert.java|3456|3482|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+Class End  : com.outflows.pokalert.pokalert
+endProcessing "com\outflows\pokalert\pokalert.java"
+
+startProcessing "com\outflows\pokalert\sounds\BackgroundMusic.java" md5: 420377d2189456197b4ebbd647bf947f
+Cache Hit!
+@|com\outflows\pokalert\sounds\BackgroundMusic.java|8|36|com.outflows.pokalert.sounds|package|com.outflows.pokalert.sounds|(file)
+Class Start: com.outflows.pokalert.sounds.BackgroundMusic
+   @|com\outflows\pokalert\sounds\BackgroundMusic.java|119|134|BackgroundMusic|class|com.outflows.pokalert.sounds.BackgroundMusic
+Class End  : com.outflows.pokalert.sounds.BackgroundMusic
+endProcessing "com\outflows\pokalert\sounds\BackgroundMusic.java"
+
+startProcessing "com\outflows\pokalert\sounds\SoundRegisterListener.java" md5: fa6e3f7184e9c0c2c512dab8af45d875
+Cache Hit!
+@|com\outflows\pokalert\sounds\SoundRegisterListener.java|8|36|com.outflows.pokalert.sounds|package|com.outflows.pokalert.sounds|(file)
+Class Start: com.outflows.pokalert.sounds.SoundRegisterListener
+   @|com\outflows\pokalert\sounds\SoundRegisterListener.java|313|334|SoundRegisterListener|class|com.outflows.pokalert.sounds.SoundRegisterListener
+   Method Start: registerSoundEvents(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|484|489|event|param|com.outflows.pokalert.sounds.SoundRegisterListener|registerSoundEvents|(Lnet/minecraftforge/event/RegistryEvent$Register;)V|event|0
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|343|357|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|358|366|priority|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|priority|()Lnet/minecraftforge/fml/common/eventhandler/EventPriority;
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|369|382|EventPriority|class|net.minecraftforge.fml.common.eventhandler.EventPriority
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|383|389|NORMAL|field|net.minecraftforge.fml.common.eventhandler.EventPriority|NORMAL
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|391|406|receiveCanceled|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|receiveCanceled|()Z
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|429|448|registerSoundEvents|method|com.outflows.pokalert.sounds.SoundRegisterListener|registerSoundEvents|(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|449|471|RegistryEvent.Register|class|net.minecraftforge.event.RegistryEvent.Register
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|472|482|SoundEvent|class|net.minecraft.util.SoundEvent
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|501|506|event|param|com.outflows.pokalert.sounds.SoundRegisterListener|registerSoundEvents|(Lnet/minecraftforge/event/RegistryEvent$Register;)V|event|0
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|507|518|getRegistry|method|net.minecraftforge.event.RegistryEvent.Register|getRegistry|()Lnet/minecraftforge/registries/IForgeRegistry;
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|521|532|registerAll|method|net.minecraftforge.registries.IForgeRegistry|registerAll|([Lnet/minecraftforge/registries/IForgeRegistryEntry;)V
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|537|547|SoundEvent|class|net.minecraft.util.SoundEvent
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|552|568|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|com\outflows\pokalert\sounds\SoundRegisterListener.java|590|605|setRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry.Impl|setRegistryName|(Ljava/lang/String;)Lnet/minecraftforge/registries/IForgeRegistryEntry;
+   Method End: registerSoundEvents(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+Class End  : com.outflows.pokalert.sounds.SoundRegisterListener
+endProcessing "com\outflows\pokalert\sounds\SoundRegisterListener.java"
+
+startProcessing "com\outflows\pokalert\sounds\SoundRegistrator.java" md5: f37413fb55d2587cc8265bbf08622cf6
+Cache Hit!
+@|com\outflows\pokalert\sounds\SoundRegistrator.java|8|36|com.outflows.pokalert.sounds|package|com.outflows.pokalert.sounds|(file)
+Class Start: com.outflows.pokalert.sounds.SoundRegistrator
+   @|com\outflows\pokalert\sounds\SoundRegistrator.java|135|151|SoundRegistrator|class|com.outflows.pokalert.sounds.SoundRegistrator
+   @|com\outflows\pokalert\sounds\SoundRegistrator.java|175|185|SoundEvent|class|net.minecraft.util.SoundEvent
+   @|com\outflows\pokalert\sounds\SoundRegistrator.java|175|185|SoundEvent|class|net.minecraft.util.SoundEvent
+   @|com\outflows\pokalert\sounds\SoundRegistrator.java|186|190|BOND|field|com.outflows.pokalert.sounds.SoundRegistrator|BOND|
+   @|com\outflows\pokalert\sounds\SoundRegistrator.java|193|212|addSoundsToRegistry|method|com.outflows.pokalert.sounds.SoundRegistrator|addSoundsToRegistry|(Ljava/lang/String;)Lnet/minecraft/util/SoundEvent;
+   Method Start: addSoundsToRegistry(Ljava/lang/String;)Lnet/minecraft/util/SoundEvent;
+      @|com\outflows\pokalert\sounds\SoundRegistrator.java|278|285|soundId|param|com.outflows.pokalert.sounds.SoundRegistrator|addSoundsToRegistry|(Ljava/lang/String;)Lnet/minecraft/util/SoundEvent;|soundId|0
+      @|com\outflows\pokalert\sounds\SoundRegistrator.java|240|250|SoundEvent|class|net.minecraft.util.SoundEvent
+      @|com\outflows\pokalert\sounds\SoundRegistrator.java|251|270|addSoundsToRegistry|method|com.outflows.pokalert.sounds.SoundRegistrator|addSoundsToRegistry|(Ljava/lang/String;)Lnet/minecraft/util/SoundEvent;
+      @|com\outflows\pokalert\sounds\SoundRegistrator.java|271|277|String|class|java.lang.String
+      @|com\outflows\pokalert\sounds\SoundRegistrator.java|291|307|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|com\outflows\pokalert\sounds\SoundRegistrator.java|332|348|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|com\outflows\pokalert\sounds\SoundRegistrator.java|361|368|soundId|param|com.outflows.pokalert.sounds.SoundRegistrator|addSoundsToRegistry|(Ljava/lang/String;)Lnet/minecraft/util/SoundEvent;|soundId|0
+      @|com\outflows\pokalert\sounds\SoundRegistrator.java|373|383|SoundEvent|class|net.minecraft.util.SoundEvent
+      @|com\outflows\pokalert\sounds\SoundRegistrator.java|401|411|SoundEvent|class|net.minecraft.util.SoundEvent
+      @|com\outflows\pokalert\sounds\SoundRegistrator.java|445|460|setRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|setRegistryName|(Lnet/minecraft/util/ResourceLocation;)Ljava/lang/Object;
+   Method End: addSoundsToRegistry(Ljava/lang/String;)Lnet/minecraft/util/SoundEvent;
+Class End  : com.outflows.pokalert.sounds.SoundRegistrator
+endProcessing "com\outflows\pokalert\sounds\SoundRegistrator.java"
+

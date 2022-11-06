@@ -1,0 +1,45 @@
+Symbol range map extraction starting
+Processing 11 files
+startProcessing "com\outflows\pokalert\alert\AntiAfk.java" md5: e44f085a24a442afb09bf373d0c55a0b
+endProcessing "com\outflows\pokalert\alert\AntiAfk.java"
+
+startProcessing "com\outflows\pokalert\alert\PokemonDetection.java" md5: 6bbecf970ee1215868a0b17f40b281b5
+Cache Hit!
+endProcessing "com\outflows\pokalert\alert\PokemonDetection.java"
+
+startProcessing "com\outflows\pokalert\alert\Relog.java" md5: ff70b12021a525d6e684c59294ed96ff
+Cache Hit!
+endProcessing "com\outflows\pokalert\alert\Relog.java"
+
+startProcessing "com\outflows\pokalert\alert\Teleport.java" md5: ecb2805f9ed9ab3f7ce2ce954ae52a0d
+Cache Hit!
+endProcessing "com\outflows\pokalert\alert\Teleport.java"
+
+startProcessing "com\outflows\pokalert\chat\ChatItems.java" md5: 27bb77dc691446d28b36275e36c6251c
+Cache Hit!
+endProcessing "com\outflows\pokalert\chat\ChatItems.java"
+
+startProcessing "com\outflows\pokalert\commands\CommandBase.java" md5: e3f3f0d0581421e39ee1032717aaa3d2
+Cache Hit!
+endProcessing "com\outflows\pokalert\commands\CommandBase.java"
+
+startProcessing "com\outflows\pokalert\commands\ListTargetsCommand.java" md5: 4dcebc8826ee868f9f0f27ebbbbedfd9
+Cache Hit!
+endProcessing "com\outflows\pokalert\commands\ListTargetsCommand.java"
+
+startProcessing "com\outflows\pokalert\pokalert.java" md5: 59f32236b802b1bdd0ba6f42bce527a9
+Cache Hit!
+endProcessing "com\outflows\pokalert\pokalert.java"
+
+startProcessing "com\outflows\pokalert\sounds\BackgroundMusic.java" md5: 420377d2189456197b4ebbd647bf947f
+Cache Hit!
+endProcessing "com\outflows\pokalert\sounds\BackgroundMusic.java"
+
+startProcessing "com\outflows\pokalert\sounds\SoundRegisterListener.java" md5: fa6e3f7184e9c0c2c512dab8af45d875
+Cache Hit!
+endProcessing "com\outflows\pokalert\sounds\SoundRegisterListener.java"
+
+startProcessing "com\outflows\pokalert\sounds\SoundRegistrator.java" md5: f37413fb55d2587cc8265bbf08622cf6
+Cache Hit!
+endProcessing "com\outflows\pokalert\sounds\SoundRegistrator.java"
+
