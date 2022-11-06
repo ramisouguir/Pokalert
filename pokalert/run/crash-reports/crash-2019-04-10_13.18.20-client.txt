@@ -1,0 +1,137 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 4/10/19 1:18 PM
+Description: Unexpected error
+
+java.lang.IllegalArgumentException: object is not an instance of declaring class
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.outflows.pokalert.alert.PokemonDetection.printCurrentSounds(PokemonDetection.java:156)
+	at com.outflows.pokalert.alert.PokemonDetection.grabId(PokemonDetection.java:183)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_73_PokemonDetection_grabId_AttackEntityEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.common.ForgeHooks.onPlayerAttackTarget(ForgeHooks.java:1060)
+	at net.minecraft.entity.player.EntityPlayer.attackTargetEntityWithCurrentItem(EntityPlayer.java:1360)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.attackEntity(PlayerControllerMP.java:575)
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java:1623)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2376)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2147)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1935)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1188)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:442)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.outflows.pokalert.alert.PokemonDetection.printCurrentSounds(PokemonDetection.java:156)
+	at com.outflows.pokalert.alert.PokemonDetection.grabId(PokemonDetection.java:183)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_73_PokemonDetection_grabId_AttackEntityEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.common.ForgeHooks.onPlayerAttackTarget(ForgeHooks.java:1060)
+	at net.minecraft.entity.player.EntityPlayer.attackTargetEntityWithCurrentItem(EntityPlayer.java:1360)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.attackEntity(PlayerControllerMP.java:575)
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java:1623)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2376)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2147)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player21'/5, l='MpServer', x=422.59, y=75.00, z=-52.35]]
+	Chunk stats: MultiplayerChunkCache: 625, 625
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (252,64,236), Chunk: (at 12,4,12 in 15,14; contains blocks 240,0,224 to 255,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 181366 game time, 43661 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 43 total; [EntityPixelmon['Skarmory'/322, l='MpServer', x=415.81, y=90.00, z=-20.81], EntityPixelmon['Absol'/323, l='MpServer', x=404.77, y=97.00, z=-23.96], EntityPixelmon['Larvitar'/388, l='MpServer', x=439.86, y=88.00, z=11.50], EntityPixelmon['Larvitar'/389, l='MpServer', x=429.50, y=84.00, z=0.50], EntityPixelmon['Absol'/327, l='MpServer', x=440.76, y=90.00, z=-14.39], EntityPixelmon['Shuckle'/328, l='MpServer', x=427.36, y=84.00, z=-28.39], EntityMinecartChest['Minecart with Chest'/9, l='MpServer', x=418.50, y=7.06, z=-71.50], EntityMinecartChest['Minecart with Chest'/10, l='MpServer', x=435.50, y=6.06, z=-69.50], EntityMinecartChest['Minecart with Chest'/11, l='MpServer', x=440.50, y=5.06, z=-69.50], EntityPixelmon['Geodude'/331, l='MpServer', x=397.33, y=78.00, z=-42.09], EntityPixelmon['Hoothoot'/395, l='MpServer', x=455.50, y=71.00, z=-61.50], NPCTrainer['2'/332, l='MpServer', x=395.48, y=98.00, z=-28.46], EntityMinecartChest['Minecart with Chest'/12, l='MpServer', x=460.50, y=9.06, z=-98.50], EntityMinecartChest['Minecart with Chest'/13, l='MpServer', x=455.50, y=14.06, z=-81.50], EntityPixelmon['Geodude'/397, l='MpServer', x=366.65, y=76.00, z=-26.15], EntityMinecartChest['Minecart with Chest'/14, l='MpServer', x=493.50, y=24.06, z=6.50], EntityPlayerSP['Player21'/5, l='MpServer', x=422.59, y=75.00, z=-52.35], EntityPixelmon['Hoothoot'/336, l='MpServer', x=443.52, y=79.58, z=-25.79], EntityPixelmon['Murkrow'/400, l='MpServer', x=459.92, y=70.00, z=-61.20], EntityPixelmon['Hoothoot'/337, l='MpServer', x=462.98, y=80.00, z=-30.37], EntityPixelmon['Hoothoot'/341, l='MpServer', x=461.65, y=72.00, z=-33.06], EntityPixelmon['Hoothoot'/405, l='MpServer', x=414.50, y=75.00, z=-85.50], EntityPixelmon['Geodude'/344, l='MpServer', x=387.90, y=78.00, z=-2.25], EntityPixelmon['Bunnelby'/408, l='MpServer', x=404.49, y=56.00, z=-89.22], EntityPixelmon['Shuckle'/345, l='MpServer', x=396.53, y=101.00, z=-16.59], EntityPixelmon['Murkrow'/410, l='MpServer', x=464.50, y=82.00, z=-15.50], EntityPixelmon['Shuckle'/348, l='MpServer', x=397.50, y=75.00, z=-76.55], EntityPixelmon['Hoothoot'/412, l='MpServer', x=479.95, y=79.18, z=-37.27], EntityPixelmon['Spinarak'/349, l='MpServer', x=413.41, y=72.00, z=-68.08], EntityPixelmon['Shuckle'/223, l='MpServer', x=405.50, y=79.00, z=2.50], EntityPixelmon['Hoothoot'/224, l='MpServer', x=401.56, y=79.00, z=14.76], EntityPixelmon['Hoothoot'/416, l='MpServer', x=429.25, y=84.13, z=-76.98], EntityPixelmon['Geodude'/354, l='MpServer', x=410.85, y=76.00, z=-50.29], EntityPixelmon['Pikachu'/418, l='MpServer', x=421.47, y=75.00, z=-53.58], EntityPixelmon['Larvitar'/420, l='MpServer', x=380.50, y=78.00, z=-68.50], EntityPixelmon['Hoothoot'/421, l='MpServer', x=377.50, y=88.00, z=-82.50], EntityPixelmon['Sentret'/364, l='MpServer', x=447.31, y=63.00, z=-79.82], EntityPixelmon['Sentret'/365, l='MpServer', x=446.52, y=63.00, z=-86.11], EntityPixelmon['Abra'/368, l='MpServer', x=426.50, y=64.00, z=-88.50], EntityPixelmon['Cascoon'/52, l='MpServer', x=481.34, y=72.00, z=-13.33], EntityPixelmon['Larvitar'/376, l='MpServer', x=368.50, y=86.00, z=-47.32], EntityPixelmon['Murkrow'/380, l='MpServer', x=437.84, y=72.00, z=-66.01], EntityPixelmon['Geodude'/381, l='MpServer', x=433.36, y=63.00, z=-68.04]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:461)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2889)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:471)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_202, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 329207176 bytes (313 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2824 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                              | Signature |
+	|:------ |:--------- |:------------ |:----------------------------------- |:--------- |
+	| LCHIJA | minecraft | 1.12.2       | minecraft.jar                       | None      |
+	| LCHIJA | mcp       | 9.42         | minecraft.jar                       | None      |
+	| LCHIJA | FML       | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2824.jar    | None      |
+	| LCHIJA | forge     | 14.23.5.2824 | forgeSrc-1.12.2-14.23.5.2824.jar    | None      |
+	| LCHIJA | pokalert  | 1.0          | bin                                 | None      |
+	| LCHIJA | pixelmon  | 7.0.5        | Pixelmon-1.12.2-7.0.5-universal.jar | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 418.91' Renderer: 'GeForce GTX 1070 Ti/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1070 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 418.91, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 16x AMD Ryzen 7 2700X Eight-Core Processor 

@@ -1,0 +1,33 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2019-04-08 20:20:44 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "zombie": "2019-04-08 20:20:44 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "zombie": "2019-04-08 20:20:44 -0400"
+    },
+    "done": false
+  },
+  "pixelmon:pokedex/pokedex_trigger": {
+    "criteria": {
+      "pokedex_base": "2019-04-08 20:20:14 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2019-04-08 20:20:09 -0400",
+      "roofed_forest": "2019-04-08 20:20:49 -0400"
+    },
+    "done": false
+  }
+}

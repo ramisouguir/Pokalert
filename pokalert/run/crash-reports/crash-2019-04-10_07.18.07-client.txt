@@ -1,0 +1,129 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 4/10/19 7:18 AM
+Description: Unexpected error
+
+java.lang.RuntimeException: java.lang.NoSuchFieldException: playingSounds
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:189)
+	at net.minecraftforge.common.ForgeHooks.onPlayerAttackTarget(ForgeHooks.java:1060)
+	at net.minecraft.entity.player.EntityPlayer.attackTargetEntityWithCurrentItem(EntityPlayer.java:1360)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.attackEntity(PlayerControllerMP.java:575)
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java:1623)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2376)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2147)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1935)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1188)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:442)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+Caused by: java.lang.NoSuchFieldException: playingSounds
+	at java.lang.Class.getDeclaredField(Unknown Source)
+	at com.outflows.pokalert.alert.PokemonDetection.printCurrentSounds(PokemonDetection.java:155)
+	at com.outflows.pokalert.alert.PokemonDetection.grabId(PokemonDetection.java:182)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_71_PokemonDetection_grabId_AttackEntityEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	... 22 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:189)
+	at net.minecraftforge.common.ForgeHooks.onPlayerAttackTarget(ForgeHooks.java:1060)
+	at net.minecraft.entity.player.EntityPlayer.attackTargetEntityWithCurrentItem(EntityPlayer.java:1360)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.attackEntity(PlayerControllerMP.java:575)
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java:1623)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2376)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2147)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player152'/7, l='MpServer', x=441.81, y=89.18, z=11.63]]
+	Chunk stats: MultiplayerChunkCache: 625, 625
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (252,64,236), Chunk: (at 12,4,12 in 15,14; contains blocks 240,0,224 to 255,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 154857 game time, 17152 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 40 total; [EntityPixelmon['Zubat'/129, l='MpServer', x=400.05, y=100.00, z=40.52], EntityPixelmon['Geodude'/131, l='MpServer', x=391.50, y=79.00, z=-0.50], EntityPixelmon['Shuckle'/135, l='MpServer', x=455.50, y=85.00, z=7.50], EntityPixelmon['Zubat'/136, l='MpServer', x=461.30, y=85.00, z=41.36], EntityPixelmon['Zubat'/139, l='MpServer', x=414.96, y=95.00, z=86.61], EntityPixelmon['Murkrow'/141, l='MpServer', x=473.50, y=84.00, z=-11.50], EntityPixelmon['Zubat'/143, l='MpServer', x=395.65, y=106.00, z=-4.90], EntityPixelmon['Larvitar'/80, l='MpServer', x=423.43, y=82.00, z=20.50], EntityPixelmon['Zubat'/144, l='MpServer', x=394.97, y=102.00, z=10.69], EntityMinecartChest['Minecart with Chest'/18, l='MpServer', x=418.50, y=7.06, z=-71.50], EntityPixelmon['Geodude'/147, l='MpServer', x=505.13, y=77.60, z=-7.10], EntityMinecartChest['Minecart with Chest'/19, l='MpServer', x=435.50, y=6.06, z=-69.50], EntityPixelmon['Geodude'/148, l='MpServer', x=490.50, y=77.00, z=-4.50], EntityMinecartChest['Minecart with Chest'/20, l='MpServer', x=440.50, y=5.06, z=-69.50], EntityPixelmon['Larvitar'/85, l='MpServer', x=407.50, y=78.00, z=-42.50], EntityPixelmon['Shuckle'/86, l='MpServer', x=404.50, y=93.00, z=-27.97], EntityPixelmon['Nidoran♀'/151, l='MpServer', x=443.11, y=88.00, z=10.21], EntityPixelmon['Zubat'/153, l='MpServer', x=489.01, y=86.00, z=57.20], EntityPlayerSP['Player152'/7, l='MpServer', x=441.81, y=89.18, z=11.63], EntityMinecartChest['Minecart with Chest'/27, l='MpServer', x=493.50, y=24.06, z=6.50], EntityPixelmon['Zubat'/157, l='MpServer', x=404.43, y=99.00, z=64.23], EntityPixelmon['Hoothoot'/95, l='MpServer', x=443.19, y=93.00, z=-7.05], EntityPixelmon['Zubat'/160, l='MpServer', x=417.04, y=89.00, z=-38.61], EntityPixelmon['Zubat'/161, l='MpServer', x=421.60, y=97.00, z=-23.06], EntityPixelmon['Larvitar'/100, l='MpServer', x=446.52, y=84.00, z=37.42], EntityPixelmon['Larvitar'/164, l='MpServer', x=396.50, y=79.00, z=19.50], EntityPixelmon['Larvitar'/38, l='MpServer', x=454.55, y=87.00, z=68.52], EntityPixelmon['Zubat'/103, l='MpServer', x=413.67, y=86.00, z=13.64], EntityPixelmon['Hoothoot'/107, l='MpServer', x=462.50, y=74.00, z=-42.50], EntityPixelmon['Hoothoot'/108, l='MpServer', x=472.92, y=81.00, z=-29.23], EntityPixelmon['Murkrow'/46, l='MpServer', x=437.58, y=71.00, z=-50.33], EntityPixelmon['Zubat'/111, l='MpServer', x=415.56, y=101.00, z=76.23], EntityPixelmon['Larvitar'/50, l='MpServer', x=424.50, y=87.00, z=-10.49], EntityPixelmon['Geodude'/114, l='MpServer', x=471.50, y=75.00, z=27.50], EntityPixelmon['Zubat'/53, l='MpServer', x=416.68, y=88.00, z=-35.96], EntityPixelmon['Larvitar'/54, l='MpServer', x=439.61, y=90.00, z=-15.38], EntityPixelmon['Zubat'/119, l='MpServer', x=485.88, y=96.00, z=64.49], EntityPixelmon['Hoothoot'/61, l='MpServer', x=456.50, y=82.00, z=-16.77], EntityPixelmon['Zubat'/125, l='MpServer', x=472.08, y=95.00, z=77.84], EntityPixelmon['Rattata'/62, l='MpServer', x=473.06, y=76.00, z=0.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:461)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2889)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:471)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_202, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 588622520 bytes (561 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2824 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                              | Signature |
+	|:------ |:--------- |:------------ |:----------------------------------- |:--------- |
+	| LCHIJA | minecraft | 1.12.2       | minecraft.jar                       | None      |
+	| LCHIJA | mcp       | 9.42         | minecraft.jar                       | None      |
+	| LCHIJA | FML       | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2824.jar    | None      |
+	| LCHIJA | forge     | 14.23.5.2824 | forgeSrc-1.12.2-14.23.5.2824.jar    | None      |
+	| LCHIJA | pokalert  | 1.0          | bin                                 | None      |
+	| LCHIJA | pixelmon  | 7.0.5        | Pixelmon-1.12.2-7.0.5-universal.jar | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 418.91' Renderer: 'GeForce GTX 1070 Ti/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1070 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 418.91, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 16x AMD Ryzen 7 2700X Eight-Core Processor 

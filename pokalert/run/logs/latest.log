@@ -1,0 +1,238 @@
+[00:17:39] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Rami/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[00:17:39] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[00:17:39] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[00:17:39] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[00:17:39] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[00:17:39] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2824 for Minecraft 1.12.2 loading
+[00:17:39] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_202, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_202
+[00:17:39] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[00:17:39] [main/ERROR] [FML]: Full: C:\Users\Rami\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[00:17:39] [main/ERROR] [FML]: Trimmed: c:/users/rami/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[00:17:39] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[00:17:39] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[00:17:40] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[00:17:40] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[00:17:40] [main/INFO] [FML]: Searching C:\Users\Rami\Desktop\Modding\pokalert\run\.\mods for mods
+[00:17:40] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[00:17:40] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[00:17:40] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[00:17:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[00:17:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[00:17:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[00:17:40] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[00:17:40] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[00:17:40] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[00:17:41] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[00:17:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[00:17:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[00:17:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[00:17:41] [main/INFO] [GradleStart]: Remapping AccessTransformer rules...
+[00:17:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[00:17:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[00:17:41] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[00:17:42] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player342
+[00:17:44] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[00:17:44] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[00:17:45] [Client thread/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_202, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 807638592 bytes (770 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 418.91' Renderer: 'GeForce GTX 1070 Ti/PCIe/SSE2'
+[00:17:45] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2824 Initialized
+[00:17:45] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[00:17:45] [Client thread/INFO] [FML]: Replaced 1036 ore ingredients
+[00:17:46] [Client thread/INFO] [FML]: Searching C:\Users\Rami\Desktop\Modding\pokalert\run\.\mods for mods
+[00:17:47] [Client thread/INFO] [FML]: Forge Mod Loader has identified 6 mods to load
+[00:17:47] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, pokalert, pixelmon] at CLIENT
+[00:17:47] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, pokalert, pixelmon] at SERVER
+[00:17:47] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 98794357 nanos
+[00:17:49] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pokalert, FMLFileResourcePack:Pixelmon
+[00:17:49] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[00:17:49] [Client thread/INFO] [FML]: Found 1168 ObjectHolder annotations
+[00:17:49] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[00:17:49] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[00:17:49] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[00:17:49] [Client thread/INFO] [Pixelmon]: Loading Pixelmon version 7.0.5
+[00:17:49] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[00:17:49] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2836
+[00:17:49] [Forge Version Check/INFO] [forge.VersionCheck]: [pixelmon] Starting version check at https://reforged.gg/forge/update.json
+[00:17:50] [Forge Version Check/INFO] [forge.VersionCheck]: [pixelmon] Found status: UP_TO_DATE Target: null
+[00:17:50] [Client thread/INFO] [Pixelmon]: Checking for migrations..
+[00:17:50] [Client thread/INFO] [Pixelmon]: Loading Advancements
+[00:17:53] [Client thread/INFO] [FML]: Applying holder lookups
+[00:17:53] [Client thread/INFO] [FML]: Holder lookups applied
+[00:17:53] [Client thread/INFO] [Pixelmon]: Loading TM/HMs.
+[00:17:53] [Client thread/INFO] [FML]: Applying holder lookups
+[00:17:53] [Client thread/INFO] [FML]: Holder lookups applied
+[00:17:53] [Client thread/INFO] [FML]: Applying holder lookups
+[00:17:53] [Client thread/INFO] [FML]: Holder lookups applied
+[00:17:53] [Client thread/INFO] [FML]: Applying holder lookups
+[00:17:53] [Client thread/INFO] [FML]: Holder lookups applied
+[00:17:53] [Client thread/INFO] [FML]: Injecting itemstacks
+[00:17:53] [Client thread/INFO] [FML]: Itemstack injection complete
+[00:17:56] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[00:17:56] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[00:17:56] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[00:17:56] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[00:17:57] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[00:18:01] [Client thread/INFO] [FML]: Max texture size: 16384
+[00:18:01] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture pixelmon:textures/sprites/shinypokemon/196.png with size 40x40 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[00:18:01] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture pixelmon:textures/sprites/shinypokemon/197.png with size 40x40 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[00:18:01] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture pixelmon:textures/sprites/shinypokemon/198.png with size 40x40 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[00:18:02] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture pixelmon:textures/sprites/pokemon/809.png with size 52x52 will have visual artifacts at mip level 4, it can only support level 2. Please report to the mod author that the texture should be some multiple of 16x16.
+[00:18:03] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 4096x4096 textures-atlas
+[00:18:04] [Client thread/INFO] [FML]: Applying holder lookups
+[00:18:04] [Client thread/INFO] [FML]: Holder lookups applied
+[00:18:05] [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class net.minecraft.entity.player.EntityPlayer from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[00:18:05] [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class net.minecraft.entity.player.EntityPlayer from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[00:18:05] [Client thread/INFO] [Pixelmon]: Registering shop items.
+[00:18:05] [Client thread/INFO] [Pixelmon]: Registering NPCs.
+[00:18:05] [Client thread/INFO] [Pixelmon]: Registered NPC trades.
+[00:18:05] [Client thread/INFO] [Pixelmon]: Registering structures.
+[00:18:07] [Client thread/INFO] [Pixelmon]: Registering drops.
+[00:18:07] [Client thread/INFO] [Pixelmon]: Registering Pokémon drops.
+[00:18:08] [Client thread/INFO] [Pixelmon]: Registering battle rules.
+[00:18:14] [Client thread/INFO] [FML]: Injecting itemstacks
+[00:18:14] [Client thread/INFO] [FML]: Itemstack injection complete
+[00:18:14] [Client thread/INFO] [Pixelmon]: Registering spawn sets.
+[00:18:16] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 6 mods
+[00:18:16] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[00:18:16] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[00:18:16] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: net.minecraft.client.gui.GuiMainMenu@162b3442
+[00:18:16] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[00:18:20] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: net.minecraft.client.gui.GuiWorldSelection@1bd74993
+[00:18:22] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[00:18:22] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[00:18:22] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[00:18:23] [Server thread/INFO] [FML]: Applying holder lookups
+[00:18:23] [Server thread/INFO] [FML]: Holder lookups applied
+[00:18:23] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@45c0684f)
+[00:18:23] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 703 advancements
+[00:18:23] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@45c0684f)
+[00:18:23] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@45c0684f)
+[00:18:23] [Server thread/INFO] [FML]: Loading dimension 72 (New World) (net.minecraft.server.integrated.IntegratedServer@45c0684f)
+[00:18:23] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[00:18:25] [Server thread/INFO] [FML]: Unloading dimension -1
+[00:18:25] [Server thread/INFO] [FML]: Unloading dimension 1
+[00:18:25] [Server thread/INFO] [FML]: Unloading dimension 72
+[00:18:25] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
+[00:18:25] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: net.minecraft.client.gui.GuiScreenWorking@5b3b13fb
+[00:18:26] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[00:18:26] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[00:18:26] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 6 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2824,pokalert@1.3.1,mcp@9.42,pixelmon@7.0.5
+[00:18:26] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[00:18:26] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[00:18:26] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player342[local:E:674adabd] logged in with entity id 5 at (4003.1501530172545, 69.0, -1283.974383849755)
+[00:18:26] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player342 joined the game
+[00:18:26] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player342 has made the advancement [Stone Age]
+[00:18:27] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: net.minecraft.client.gui.GuiDownloadTerrain@6f07bc19
+[00:18:28] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[00:18:28] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[00:18:28] [pool-2-thread-1/WARN] [com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6513851[id=56a50a28-2026-3b27-8279-243e3ff82a5a,name=Player342,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3182) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_202]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_202]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_202]
+[00:18:28] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:28] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:28] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player342 has made the advancement [Stone Age]
+[00:18:28] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: com.pixelmonmod.pixelmon.client.gui.starter.GuiChooseStarter@58054d90
+[00:18:28] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 52 advancements
+[00:18:31] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:31] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:31] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player342 has made the advancement [You picked a starter!]
+[00:18:32] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player342 has made the advancement [You picked a starter!]
+[00:18:32] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 53 advancements
+[00:18:33] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: net.minecraft.client.gui.GuiChat@18b3f8b7
+[00:18:34] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:34] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:34] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: <Player342> test
+[00:18:34] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: com.outflows.pokalert.gui.MainMenu@2bbb74a7
+[00:18:34] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player342> test
+[00:18:34] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureManager]: Failed to load texture: pokalert:textures/gui/core.png
+java.io.FileNotFoundException: pokalert:textures/gui/core.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:69) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:34) ~[SimpleTexture.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:69) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:44) [TextureManager.class:?]
+	at com.outflows.pokalert.gui.MainMenu.drawScreen(MainMenu.java:62) [MainMenu.class:?]
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:396) [ForgeHooksClient.class:?]
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1177) [EntityRenderer.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1209) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:442) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:25) [start/:?]
+[00:18:34] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[00:18:34] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[00:18:35] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.MainMenu:actionPerformed:41]: Button Pressed
+[00:18:35] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.MainMenu:actionPerformed:44]: Here
+[00:18:35] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:35] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:38] [Server thread/INFO] [Pixelmon]: Bad TileEntity BlockPos{x=3940, y=63, z=-1100} expected TileEntityBerryTree got TileEntityApricornTree
+[00:18:38] [Server thread/INFO] [Pixelmon]: Bad TileEntity BlockPos{x=4089, y=69, z=-1101} expected TileEntityBerryTree got TileEntityApricornTree
+[00:18:44] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: net.minecraft.client.gui.GuiChat@5bb581f5
+[00:18:45] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:45] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:45] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: <Player342> test
+[00:18:45] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: com.outflows.pokalert.gui.MainMenu@2c3ef860
+[00:18:45] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] <Player342> test
+[00:18:45] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[00:18:45] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[00:18:47] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.MainMenu:actionPerformed:41]: Button Pressed
+[00:18:47] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.MainMenu:actionPerformed:44]: Here
+[00:18:47] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:47] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: null
+[00:18:48] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: net.minecraft.client.gui.GuiIngameMenu@55e10db
+[00:18:48] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[00:18:48] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[00:18:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[00:18:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[00:18:50] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Player342 lost connection: Disconnected
+[00:18:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player342 left the game
+[00:18:50] [Server thread/INFO] [STDOUT]: [com.outflows.pokalert.alert.Teleport:leftServer:85]: Here
+[00:18:50] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
+[00:18:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[00:18:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[00:18:50] [Server thread/INFO] [FML]: Unloading dimension 0
+[00:18:51] [Server thread/INFO] [FML]: Applying holder lookups
+[00:18:51] [Server thread/INFO] [FML]: Holder lookups applied
+[00:18:51] [Client thread/INFO] [STDOUT]: [com.outflows.pokalert.gui.GuiHandler:printGui:18]: net.minecraft.client.gui.GuiMainMenu@64aa6759
+[00:18:52] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[00:18:52] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[00:18:52] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com

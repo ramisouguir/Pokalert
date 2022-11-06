@@ -1,0 +1,16 @@
+{
+  "pixelmon:pokedex/pokedex_trigger": {
+    "criteria": {
+      "pokedex_base": "2019-04-09 10:41:04 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "forest": "2019-04-09 10:42:12 -0400",
+      "swampland": "2019-04-09 10:41:32 -0400",
+      "plains": "2019-04-09 10:41:01 -0400"
+    },
+    "done": false
+  }
+}

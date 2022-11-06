@@ -1,0 +1,16 @@
+{
+  "pixelmon:pokedex/pokedex_trigger": {
+    "criteria": {
+      "pokedex_base": "2019-04-08 23:56:57 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "forest": "2019-04-08 23:58:11 -0400",
+      "extreme_hills_with_trees": "2019-04-08 23:58:19 -0400",
+      "extreme_hills": "2019-04-08 23:56:53 -0400"
+    },
+    "done": false
+  }
+}

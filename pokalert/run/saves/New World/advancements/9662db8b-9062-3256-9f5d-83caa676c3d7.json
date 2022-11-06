@@ -1,0 +1,123 @@
+{
+  "pixelmon:recipes/decorative/brown_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/red_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/machines/red_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/orange_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/black_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/blue_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/machines/blue_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/yellow_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/purple_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/machines/green_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/pink_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/gray_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/machines/pink_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/machines/orange_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/machines/yellow_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/cyan_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/green_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:pokedex/pokedex_trigger": {
+    "criteria": {
+      "pokedex_base": "2019-04-10 06:20:30 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/decorative/white_vending_machine": {
+    "criteria": {
+      "has_soda_pop": "2019-04-10 06:20:26 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "ocean": "2019-04-10 06:21:14 -0400",
+      "desert": "2019-04-10 06:20:26 -0400"
+    },
+    "done": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "pixelmon:legendaries/legendary_capture_trigger": {
+    "criteria": {
+      "legendary_capture": "2019-04-09 05:29:16 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:types/capture_type_trigger": {
+    "criteria": {
+      "capture_any": "2019-04-09 05:29:16 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:pokedex/pokedex_trigger": {
+    "criteria": {
+      "pokedex_base": "2019-04-09 05:27:22 -0400"
+    },
+    "done": true
+  },
+  "pixelmon:balls/master_ball_capture": {
+    "criteria": {
+      "master_ball_capture": "2019-04-09 05:29:16 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "extreme_hills_with_trees": "2019-04-09 05:28:32 -0400",
+      "plains": "2019-04-09 05:37:25 -0400",
+      "taiga": "2019-04-09 05:33:44 -0400",
+      "extreme_hills": "2019-04-09 05:27:18 -0400",
+      "roofed_forest": "2019-04-09 05:34:05 -0400",
+      "river": "2019-04-09 05:33:43 -0400"
+    },
+    "done": false
+  }
+}

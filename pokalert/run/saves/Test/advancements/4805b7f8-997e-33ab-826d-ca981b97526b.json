@@ -1,0 +1,18 @@
+{
+  "pixelmon:pokedex/pokedex_trigger": {
+    "criteria": {
+      "pokedex_base": "2019-04-09 09:48:30 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "birch_forest": "2019-04-09 09:48:26 -0400",
+      "birch_forest_hills": "2019-04-09 09:48:57 -0400",
+      "extreme_hills": "2019-04-09 09:48:42 -0400",
+      "roofed_forest": "2019-04-09 09:49:04 -0400",
+      "river": "2019-04-09 09:48:55 -0400"
+    },
+    "done": false
+  }
+}

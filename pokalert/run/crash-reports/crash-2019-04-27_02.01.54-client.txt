@@ -1,0 +1,117 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 4/27/19 2:01 AM
+Description: Rendering screen
+
+java.lang.NullPointerException: Rendering screen
+	at com.outflows.pokalert.gui.MainMenu.drawScreen(MainMenu.java:50)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:396)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1177)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1209)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:442)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.outflows.pokalert.gui.MainMenu.drawScreen(MainMenu.java:50)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:396)
+
+-- Screen render details --
+Details:
+	Screen name: com.outflows.pokalert.gui.MainMenu
+	Mouse location: Scaled: (213, 119). Absolute: (427, 240)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player652'/5, l='MpServer', x=3641.62, y=72.00, z=-1005.90]]
+	Chunk stats: MultiplayerChunkCache: 598, 598
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-212,64,256), Chunk: (at 12,4,0 in -14,16; contains blocks -224,0,256 to -209,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 263337 game time, 151840 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 40 total; [EntityMinecartChest['Minecart with Chest'/64, l='MpServer', x=3700.50, y=23.06, z=-1080.50], EntityItem['item.tile.rail'/65, l='MpServer', x=3695.23, y=22.00, z=-1029.64], EntityItem['item.tile.torch'/66, l='MpServer', x=3695.13, y=22.00, z=-1029.78], EntityItem['item.tile.rail'/67, l='MpServer', x=3697.19, y=22.00, z=-1043.01], EntityPixelmon['Weedle'/131, l='MpServer', x=3623.50, y=64.00, z=-1030.50], EntityPixelmon['Weedle'/132, l='MpServer', x=3608.50, y=70.00, z=-1023.50], EntityItem['item.tile.rail'/69, l='MpServer', x=3699.76, y=22.00, z=-1046.13], EntityItem['item.tile.grass'/6, l='MpServer', x=3632.36, y=70.00, z=-1000.60], EntityItem['item.tile.rail'/70, l='MpServer', x=3698.19, y=22.00, z=-1047.61], EntityItem['item.item.pink_apricorn'/7, l='MpServer', x=3633.61, y=71.00, z=-1019.60], EntityItem['item.tile.rail'/71, l='MpServer', x=3696.21, y=22.00, z=-1042.73], EntityPixelmon['Weedle'/135, l='MpServer', x=3642.50, y=63.00, z=-1056.50], EntityItem['item.tile.rail'/72, l='MpServer', x=3697.88, y=22.00, z=-1041.23], EntityPixelmon['Grubbin'/136, l='MpServer', x=3657.36, y=63.00, z=-1047.77], EntityPixelmon['Taillow'/139, l='MpServer', x=3629.50, y=75.00, z=-1060.50], EntityItem['item.tile.torch'/76, l='MpServer', x=3688.90, y=17.00, z=-1010.79], EntityPixelmon['Weedle'/140, l='MpServer', x=3633.50, y=64.00, z=-1074.50], EntityItem['item.tile.rail'/77, l='MpServer', x=3697.86, y=22.00, z=-1038.25], EntityItem['item.tile.rail'/78, l='MpServer', x=3697.88, y=22.00, z=-1033.77], EntityMinecartChest['Minecart with Chest'/15, l='MpServer', x=3563.50, y=39.06, z=-999.50], EntityPixelmon['Seedot'/143, l='MpServer', x=3625.50, y=69.00, z=-957.50], EntityPixelmon['Roggenrola'/144, l='MpServer', x=3631.50, y=51.00, z=-965.50], EntityMinecartChest['Minecart with Chest'/82, l='MpServer', x=3716.50, y=24.06, z=-1036.50], EntityMinecartChest['Minecart with Chest'/33, l='MpServer', x=3596.50, y=12.06, z=-928.50], EntityItem['item.item.black_apricorn'/42, l='MpServer', x=3606.52, y=69.00, z=-1007.28], EntityPixelmon['Mienfoo'/106, l='MpServer', x=3683.50, y=76.00, z=-1000.50], EntityPixelmon['Machop'/107, l='MpServer', x=3698.50, y=74.00, z=-1003.50], EntityPixelmon['Torkoal'/110, l='MpServer', x=3646.11, y=74.00, z=-984.41], EntityPixelmon['Grubbin'/111, l='MpServer', x=3638.13, y=69.00, z=-991.86], EntityPlayerSP['Player652'/5, l='MpServer', x=3641.62, y=72.00, z=-1005.90], EntityPixelmon['Deerling'/50, l='MpServer', x=3644.50, y=71.00, z=-1006.50], EntityPixelmon['Geodude'/114, l='MpServer', x=3673.50, y=80.00, z=-985.50], EntityPixelmon['Exeggcute'/51, l='MpServer', x=3655.00, y=73.00, z=-1021.29], EntityPixelmon['Charjabug'/115, l='MpServer', x=3658.50, y=71.00, z=-991.50], EntityPixelmon['Nincada'/118, l='MpServer', x=3562.50, y=70.00, z=-1016.50], EntityPixelmon['Weedle'/119, l='MpServer', x=3580.50, y=72.00, z=-1022.50], EntityMinecartChest['Minecart with Chest'/59, l='MpServer', x=3653.50, y=26.06, z=-1085.50], EntityItem['item.tile.mushroom'/61, l='MpServer', x=3663.32, y=26.00, z=-1058.13], EntityItem['item.tile.mushroom'/62, l='MpServer', x=3671.22, y=22.00, z=-1053.88], EntityPixelmon['Weedle'/127, l='MpServer', x=3620.50, y=70.00, z=-1009.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:461)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2889)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:463)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_202, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 283973584 bytes (270 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2824 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                              | Signature |
+	|:------ |:--------- |:------------ |:----------------------------------- |:--------- |
+	| LCHIJA | minecraft | 1.12.2       | minecraft.jar                       | None      |
+	| LCHIJA | mcp       | 9.42         | minecraft.jar                       | None      |
+	| LCHIJA | FML       | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2824.jar    | None      |
+	| LCHIJA | forge     | 14.23.5.2824 | forgeSrc-1.12.2-14.23.5.2824.jar    | None      |
+	| LCHIJA | pixelmon  | 7.0.5        | Pixelmon-1.12.2-7.0.5-universal.jar | None      |
+	| LCHIJA | pokalert  | 1.3.1        | bin                                 | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 418.91' Renderer: 'GeForce GTX 1070 Ti/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1070 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 418.91, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 16x AMD Ryzen 7 2700X Eight-Core Processor 
