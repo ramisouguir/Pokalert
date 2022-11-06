@@ -1,0 +1,24 @@
+package com.outflows.pokalert.gui;
+
+import net.minecraft.client.Minecraft;
+import net.minecraftforge.client.event.GuiOpenEvent;
+import net.minecraftforge.event.ServerChatEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+public class GuiHandler 
+{
+	@SubscribeEvent
+	public void printGui(GuiOpenEvent event)
+	{
+		System.out.println(event.getGui());
+	}
+	
+	@SubscribeEvent
+	public void addMainMenu(ServerChatEvent event)
+	{
+		if(event.getMessage().equals("test"))
+		{
+			Minecraft.getMinecraft().displayGuiScreen(GuiIngameMenu);
+		}
+	}
+}

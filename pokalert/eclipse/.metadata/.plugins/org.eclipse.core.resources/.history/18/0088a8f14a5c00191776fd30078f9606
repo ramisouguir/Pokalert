@@ -1,0 +1,475 @@
+package com.outflows.pokalert.alert;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+import com.pixelmonmod.pixelmon.entities.pixelmon.*;
+import com.pixelmonmod.pixelmon.api.events.spawning.SpawnEvent;
+import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
+import com.pixelmonmod.pixelmon.api.pokemon.PokemonBase;
+import com.pixelmonmod.pixelmon.api.pokemon.PokemonSpec;
+import com.pixelmonmod.pixelmon.entities.pixelmon.EntityPixelmon;
+import com.pixelmonmod.pixelmon.enums.EnumBossMode;
+import com.pixelmonmod.pixelmon.enums.EnumSpecies;
+import com.pixelmonmod.pixelmon.enums.forms.EnumAlolan;
+import com.google.common.collect.ImmutableList;
+import com.pixelmonmod.pixelmon.Pixelmon;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.audio.ISound;
+import net.minecraft.client.audio.MovingSound;
+import net.minecraft.client.audio.PositionedSoundRecord;
+import net.minecraft.client.audio.SoundHandler;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityList;
+import net.minecraft.entity.MoverType;
+import net.minecraft.entity.monster.EntityZombie;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
+import net.minecraftforge.client.event.sound.PlaySoundEvent;
+import net.minecraftforge.client.event.sound.PlaySoundSourceEvent;
+import net.minecraftforge.event.ServerChatEvent;
+import net.minecraftforge.event.entity.EntityEvent;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+import net.minecraftforge.event.entity.player.AttackEntityEvent;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
+import net.minecraftforge.fml.common.Optional.Method;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import scala.actors.threadpool.Arrays;
+
+public class PokemonDetection implements Runnable
+{
+	public boolean pokemonSpotted = false;
+	private Thread t;
+	public ArrayList<String> legendaries = EnumSpecies.legendaries;
+	public ArrayList<String> ultrabeasts = EnumSpecies.ultrabeasts;
+	public ImmutableList<String> allpokes = EnumSpecies.getNameList();
+	private ArrayList<EntityPixelmon> targets = new ArrayList<EntityPixelmon>();
+	public ResourceLocation location = new ResourceLocation("minecraft", "record.cat");
+	public SoundEvent sevent = new SoundEvent(location);
+	public char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+	
+/* @SideOnly(Side.CLIENT)
+ @SubscribeEvent
+ public void move(AttackEntityEvent event)
+ {
+	 EntityPlayer player = Minecraft.getMinecraft().player;
+	 if(event.getTarget() instanceof EntityZombie);
+	 {
+		 event.getTarget().setGlowing(true);
+	 }
+ }*/
+	
+/*	@SideOnly(Side.CLIENT)
+	@SubscribeEvent
+	public void detectPokemon(TickEvent.ClientTickEvent event) //This boi was really laggy but worked perfectly otherwise
+	{
+		EntityPlayer player = Minecraft.getMinecraft().player;
+		EntityPlayerSP sp = (EntityPlayerSP)player;
+		World world = Minecraft.getMinecraft().world;
+		if(world!=null)
+		{
+			List<Entity> entities = world.loadedEntityList;
+			ArrayList<EntityPixelmon> pokes = new ArrayList<EntityPixelmon>();
+			for(Entity entity: entities)
+			{
+				if(entity instanceof EntityPixelmon)
+				{
+					pokes.add((EntityPixelmon)entity);
+				}
+			}
+			for(EntityPixelmon poke: pokes)
+			{
+			  if(poke.serializeNBT().toString().contains("IsShiny:1b") || poke.getPokemonName().equals("TypeNull") || legendaries.contains(poke.getName()) || ultrabeasts.contains(poke.getName()) || (poke.isBossPokemon()&&!(poke.getBossMode().toString().contains("Uncommon"))) || calculateIVPerc(poke)>85)
+			  {
+				 boolean isInTargets = false;
+				 for(EntityPixelmon target: targets)
+				 {
+					 if(poke.equals(target))
+					 {
+						 isInTargets = true;
+					 }
+				 }
+				 if(!isInTargets)
+				 {
+					 targets.add(poke);
+				 }
+				  if(!pokemonSpotted)
+				  {
+					if(!Minecraft.getMinecraft().inGameHasFocus)
+				    {
+					 if(poke.getBossMode().toString().equals("Rare"))
+					 {
+						 displayPopUp("A Rare Boss Has spawned!");
+					 }
+					 else if(poke.getBossMode().toString().equals("Legendary"))
+					 {
+						 displayPopUp("A Legendary Boss Has spawned!");
+					 }
+					 else if(poke.getBossMode().toString().equals("Ultimate"))
+					 {
+						 displayPopUp("An Ultimate Boss Has spawned!");
+					 }
+					 else if(legendaries.contains(poke.getName()) || poke.getPokemonName().equals("TypeNull"))
+					 {
+						 displayPopUp("A Legendary Has Spawned!");
+					 }
+					 else if(poke.serializeNBT().toString().contains("IsShiny:1b"))
+					 {
+						 displayPopUp("A Shiny Has Spawned!");
+					 }
+					 else if(ultrabeasts.contains(poke.getName()))
+					 {
+						 displayPopUp("An UltraBeast Has Spawned!");
+					 }
+					 else
+					 {
+						 displayPopUp("A "+poke.getName()+" with "+calculateIVPerc(poke)+"% IVs has spawned!");
+					 }
+				    }
+					//pChat("Sound");
+				    //Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.getMusicRecord(sevent));
+				  }
+				 pokemonSpotted=true;
+				 poke.setGlowing(true);
+			  }
+			  
+			  else if(allpokes.contains(poke.getName()) || poke.getPokemonName().equals("Nidoranmale") || poke.getPokemonName().equals("Nidoranfemale"))
+			  {
+				//poke.setGlowing(true);  
+			  }
+			  else
+			  {
+				  pChat("There's a weird pokemon somewhere around here");
+			  }
+			  Iterator<EntityPixelmon> iter = targets.iterator();
+			  while(iter.hasNext())
+				 {
+				  EntityPixelmon target = iter.next();
+					 if(!(pokes.contains(target)))
+					 {
+						 //pChat("One Target Is Gone");
+						 iter.remove();
+					 }
+				 }
+				 if(targets.size()==0)
+				 {
+					 if(Minecraft.getMinecraft().getSoundHandler().isSoundPlaying(sound))
+					 {
+						 
+					 }
+					 pokemonSpotted=false;
+				 }
+			  
+			 
+			}
+		}	
+	}*/
+	
+	@SideOnly(Side.CLIENT)
+	@SubscribeEvent
+	public void detectPokemon(EntityJoinWorldEvent event)
+	{
+		EntityPlayer player = Minecraft.getMinecraft().player;
+		EntityPlayerSP sp = (EntityPlayerSP)player;
+		World world = Minecraft.getMinecraft().world;
+		if(world!=null)
+		{
+			if(event.getEntity() instanceof EntityPixelmon)
+			{
+				EntityPixelmon poke = (EntityPixelmon)event.getEntity();
+			  if(poke.serializeNBT().toString().contains("IsShiny:1b") || legendaries.contains(poke.getPokemonName()) || ultrabeasts.contains(poke.getPokemonName()) || (poke.isBossPokemon()&&!(poke.getBossMode().toString().contains("Uncommon"))) || calculateIVPerc(poke)>85)
+			  {
+				 boolean isInTargets = false;
+				 for(EntityPixelmon target: targets)
+				 {
+					 if(poke.equals(target))
+					 {
+						 isInTargets = true;
+					 }
+				 }
+				 if(!isInTargets)
+				 {
+					 targets.add(poke);
+				 }
+				  if(!pokemonSpotted)
+				  {
+					if(!Minecraft.getMinecraft().inGameHasFocus)
+				    {
+					 if(poke.getBossMode().toString().equals("Rare"))
+					 {
+						 displayPopUp("A Rare Boss Has spawned!");
+					 }
+					 else if(poke.getBossMode().toString().equals("Legendary"))
+					 {
+						 displayPopUp("A Legendary Boss Has spawned!");
+					 }
+					 else if(poke.getBossMode().toString().equals("Ultimate"))
+					 {
+						 displayPopUp("An Ultimate Boss Has spawned!");
+					 }
+					 else if(legendaries.contains(poke.getPokemonName()))
+					 {
+						 displayPopUp("A Legendary Has Spawned!");
+					 }
+					 else if(poke.serializeNBT().toString().contains("IsShiny:1b"))
+					 {
+						 displayPopUp("A Shiny Has Spawned!");
+					 }
+					 else if(ultrabeasts.contains(poke.getPokemonName()))
+					 {
+						 displayPopUp("An UltraBeast Has Spawned!");
+					 }
+					 else
+					 {
+						 if(isInArray(poke.getName().charAt(0), vowels))
+						  displayPopUp("An "+poke.getName()+" with "+calculateIVPerc(poke)+"% IVs has spawned!");
+						 else
+							 displayPopUp("A "+poke.getName()+" with "+calculateIVPerc(poke)+"% IVs has spawned!");
+					 }
+				    }
+					//pChat("Sound");
+				    //Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.getMusicRecord(sevent));
+				  }
+				 pokemonSpotted=true;
+				 poke.setGlowing(true);
+			  }
+			  
+			  else if(allpokes.contains(poke.getPokemonName()))
+			  {
+				//poke.setGlowing(true);  
+			  }
+			  else
+			  {
+				  pChat(poke.getPokemonName());
+				  pChat(poke.getName());
+			  }
+			  
+			}
+			
+		}	
+	}
+	
+	
+	@SideOnly(Side.CLIENT)
+	@SubscribeEvent
+	public void updateTargets(TickEvent.ClientTickEvent event)
+	{
+		Iterator<EntityPixelmon> iter = targets.iterator();
+		  while(iter.hasNext())
+			 {
+			  EntityPixelmon target = iter.next();
+				 if(!target.isEntityAlive())
+				 {
+					 pChat("One Target Is Gone");
+					 iter.remove();
+				 }
+			 }
+		  if(targets.size()==0)
+			 {
+				 pChat("Zero Targets");
+				 /*if(Minecraft.getMinecraft().getSoundHandler().isSoundPlaying(sound))
+				 {
+					 
+				 }*/
+				 pokemonSpotted=false;
+			 }
+	}
+	
+	public void printCurrentSounds() throws NoSuchFieldException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException
+	{
+		EntityPlayer player = Minecraft.getMinecraft().player;
+		/*Class mc = Minecraft.class;
+		java.lang.reflect.Method sh = mc.getMethod("getSoundHandler", null);
+		sh.setAccessible(true);
+		Object soundH = sh.invoke(mc, null);
+		Object ps = ObfuscationReflectionHelper.findField(soundH.getClass(), "playingSounds");
+		System.out.println(ps);
+		ObfuscationReflectionHelper.findMethod(mc, srgName, returnType, parameterTypes)*/
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@SubscribeEvent
+	public void printSound(PlaySoundEvent event)
+	{
+		World world = Minecraft.getMinecraft().world;
+		if(world!=null)
+		{
+		  //pChat(event.getName());
+	    }
+	}
+	
+	public ArrayList<EntityPixelmon> getTargets()
+	{
+		return this.targets;
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@SubscribeEvent
+	public void grabId(AttackEntityEvent event) throws NoSuchFieldException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException
+	{
+	  if(event.getTarget() instanceof EntityPixelmon)
+	  {
+	   printCurrentSounds();
+	   EntityPixelmon poke = (EntityPixelmon)event.getTarget();
+	   printIVS(poke);
+	   privateChat("Defense: "+getDefIV(poke));
+	   privateChat("Attack: "+getAttackIV(poke));
+	   privateChat("Special Defense: "+getSpDefIV(poke));
+	   privateChat("Special Attack: "+getSpAttIV(poke));
+	   privateChat("HP: "+getHPIV(poke));
+	   privateChat("Speed: "+getSpeedIV(poke));
+	   privateChat("Total: "+calculateTotalIVS(poke)+"/186  ("+calculateIVPerc(poke)+"%)");
+	  }
+	}
+	
+	public int getDefIV(EntityPixelmon poke)
+	{
+		String nbt = poke.serializeNBT().toString();
+		int first = nbt.indexOf("IVDefence:")+10;
+		if(nbt.charAt(first+1)=='b')
+		{
+			return Integer.parseInt(nbt.substring(first, first+1));
+		}
+		else
+			return Integer.parseInt(nbt.substring(first, first+2));
+	}
+	
+	public int getSpDefIV(EntityPixelmon poke)
+	{
+		String nbt = poke.serializeNBT().toString();
+		int first = nbt.indexOf("IVSpDef:")+8;
+		if(nbt.charAt(first+1)=='b')
+		{
+			return Integer.parseInt(nbt.substring(first, first+1));
+		}
+		else
+			return Integer.parseInt(nbt.substring(first, first+2));
+	}
+	
+	public int getSpeedIV(EntityPixelmon poke)
+	{
+		String nbt = poke.serializeNBT().toString();
+		int first = nbt.indexOf("IVSpeed:")+8;
+		if(nbt.charAt(first+1)=='b')
+		{
+			return Integer.parseInt(nbt.substring(first, first+1));
+		}
+		else
+			return Integer.parseInt(nbt.substring(first, first+2));
+	}
+	
+	public int getAttackIV(EntityPixelmon poke)
+	{
+		String nbt = poke.serializeNBT().toString();
+		int first = nbt.indexOf("IVAttack:")+9;
+		if(nbt.charAt(first+1)=='b')
+		{
+			return Integer.parseInt(nbt.substring(first, first+1));
+		}
+		else
+			return Integer.parseInt(nbt.substring(first, first+2));
+	}
+	
+	public int getHPIV(EntityPixelmon poke)
+	{
+		String nbt = poke.serializeNBT().toString();
+		int first = nbt.indexOf("IVHP:")+5;
+		if(nbt.charAt(first+1)=='b')
+		{
+			return Integer.parseInt(nbt.substring(first, first+1));
+		}
+		else
+			return Integer.parseInt(nbt.substring(first, first+2));
+	}
+	
+	public int getSpAttIV(EntityPixelmon poke)
+	{
+		String nbt = poke.serializeNBT().toString();
+		int first = nbt.indexOf("IVSpAtt:")+8;
+		if(nbt.charAt(first+1)=='b')
+		{
+			return Integer.parseInt(nbt.substring(first, first+1));
+		}
+		else
+			return Integer.parseInt(nbt.substring(first, first+2));
+	}
+	
+	public int calculateIVPerc(int att, int def, int spdef, int spatt, int spe, int hp)
+	{
+		return (int)((((double)(att+def+spdef+spatt+spe+hp))/186)*100);
+	}
+	
+	public int calculateIVPerc(EntityPixelmon poke)
+	{
+		return (int)((((double)(calculateTotalIVS(poke)))/186)*100);
+	}
+	
+	public int calculateTotalIVS(EntityPixelmon poke)
+	{
+		return getDefIV(poke)+getAttackIV(poke)+getSpDefIV(poke)+getSpAttIV(poke)+getSpeedIV(poke)+getHPIV(poke);
+	}
+	
+	public void printIVS(EntityPixelmon poke)
+	{
+		System.out.println("Defense: "+getDefIV(poke));
+		System.out.println("Attack: "+getAttackIV(poke));
+		System.out.println("Special Defense: "+getSpDefIV(poke));
+		System.out.println("Special Attack: "+getSpAttIV(poke));
+		System.out.println("HP: "+getHPIV(poke));
+		System.out.println("Speed: "+getSpeedIV(poke));
+		System.out.println("Total: "+calculateTotalIVS(poke)+"/186  ("+calculateIVPerc(poke)+")");
+	}
+	/*public String testing(int number, String nbt)
+	{
+		return nbt.substring(number, number+2);
+	}*/
+	
+	public void displayPopUp(String message)
+	{
+		JOptionPane.showMessageDialog(null, message, "Pokalert", JOptionPane.INFORMATION_MESSAGE);
+	}
+
+	public void pChat(String message)
+	{
+		Minecraft.getMinecraft().player.sendChatMessage(message);
+	}
+	
+	public void privateChat(String message)
+	{
+		Minecraft.getMinecraft().player.sendChatMessage("/msg "+Minecraft.getMinecraft().player.getName()+" "+message);
+	}
+	
+	public boolean isInArray(char x, char[] letters)
+	{
+		for(char f: letters)
+		{
+			if(x==f)
+				return true;
+		}
+		return false;
+	}
+	@Override
+	public void run() 
+	{
+		
+	}
+}
