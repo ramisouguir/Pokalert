@@ -1,4 +1,4 @@
-#Pokalert <br />
+# Pokalert <br />
 Mod that uses entity NBT data to identify Pokemon of interest and highlight them in the world. Works on servers and single-player, allows for the user to be alerted on their desktop when a Pokemon of interest spawns.
 
 *Important* <br />
